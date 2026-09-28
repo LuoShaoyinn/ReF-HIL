@@ -30,5 +30,5 @@ suite was not run. The source environment emitted a tensor-to-scalar warning
 and system-library diagnostics, but the selected tests completed successfully.
 
 Web media preparation additionally decodes every generated video with FFmpeg
-and records hashes and stream metadata in the webpage's `assets/media.json`.
-Web build and browser validation are recorded on the `webpages` branch.
+and records hashes and stream metadata in the webpage's `.github/media.json`.
+Website publishing checks are maintained under `.github/` on the `webpages` branch.

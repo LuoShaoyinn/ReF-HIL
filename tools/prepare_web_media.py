@@ -103,7 +103,8 @@ def main() -> None:
             "poster": poster.relative_to(args.output).as_posix(),
             "sha256": digest(target), "full_decode_passed": True, **probe(target),
         })
-    manifest = args.output / "assets/media.json"
+    manifest = args.output / ".github/media.json"
+    manifest.parent.mkdir(parents=True, exist_ok=True)
     manifest.write_text(json.dumps({"videos": rows, "background": {
         "source": "video_clip_wall.mp4", "source_sha256": digest(background_source),
         "poster": background.relative_to(args.output).as_posix(),

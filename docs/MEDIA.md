@@ -24,7 +24,7 @@ with preparation excluded and training/evaluation speed labels retained. Raw
 `src/full-run.mp4` recordings are not used as task players. Three separate
 recovery edits are included per task (15 total), with their original playback
 speed preserved. Their exact filenames are listed in `tools/prepare_web_media.py`
-and the generated media manifest. Sampled recovery contact sheets were inspected. The overview includes task training, autonomous
+and the generated `.github/media.json` manifest. Sampled recovery contact sheets were inspected. The overview includes task training, autonomous
 disturbance cases, and comparison results. Its motivation slide includes
 attributed clips from other work. Those source clips remain separate and are
 not presented as ReF-HIL experiments. The training edits contain
