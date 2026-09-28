@@ -1,0 +1,21 @@
+method,task,task_package,success_rate_mean,success_rate_sd,length_mean,length_sd,horizon
+HG-DAgger,Push-T,push_t,86.7,2.9,66.6,1.8,150
+HG-DAgger,Cap unscrewing,rotate_knob,76.7,2.9,109.8,7.4,200
+HG-DAgger,Gear assembly,insert_gear,38.3,2.9,118.4,1.5,150
+HG-DAgger,Plug insertion,plug_power_socket,5,0,195.2,0,200
+HG-DAgger,Dual-branch cable routing,hang_double_strings_2,5,0,193.4,0,200
+HIL-SERL,Push-T,push_t,16.7,2.9,134.1,2.8,150
+HIL-SERL,Cap unscrewing,rotate_knob,1.7,2.9,198.5,2.7,200
+HIL-SERL,Gear assembly,insert_gear,6.7,2.9,143.9,2.3,150
+HIL-SERL,Plug insertion,plug_power_socket,0,0,200,0,200
+HIL-SERL,Dual-branch cable routing,hang_double_strings_2,0,0,200,0,200
+SiLRI,Push-T,push_t,55,5,100.3,2.8,150
+SiLRI,Cap unscrewing,rotate_knob,81.7,2.9,106,5.7,200
+SiLRI,Gear assembly,insert_gear,10,0,141.5,0,150
+SiLRI,Plug insertion,plug_power_socket,0,0,200,0,200
+SiLRI,Dual-branch cable routing,hang_double_strings_2,0,0,200,0,200
+ReF-HIL,Push-T,push_t,100,0,69.3,2.9,150
+ReF-HIL,Cap unscrewing,rotate_knob,100,0,42.4,1.4,200
+ReF-HIL,Gear assembly,insert_gear,95,5,40.1,5.6,150
+ReF-HIL,Plug insertion,plug_power_socket,91.7,2.9,64.4,5,200
+ReF-HIL,Dual-branch cable routing,hang_double_strings_2,95,5,78.3,7,200

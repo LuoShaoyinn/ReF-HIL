@@ -1,0 +1,2 @@
+# Website media are ordinary Git blobs, never LFS pointers.
+assets/** -filter -diff -merge -text

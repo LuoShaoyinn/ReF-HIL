@@ -1,0 +1,480 @@
+{
+  "videos": [
+    {
+      "id": "overview",
+      "caption": "Full project video",
+      "source": "video-3-1080p.mp4",
+      "source_sha256": "2c7e6f037dffd59a218861fa0b1081c44a3bab963dabd117206e5b47b9369959",
+      "video": "assets/videos/overview.mp4",
+      "poster": "assets/posters/overview.jpg",
+      "sha256": "cbe920878273f5a624d68efdb29944b33e96edecf08c8b6c8bf7f970df597d39",
+      "full_decode_passed": true,
+      "bytes": 30755605,
+      "duration_seconds": 177.833333,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 1920,
+          "height": 1080,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "avg_frame_rate": "0/0",
+          "sample_rate": "44100",
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "id": "push-t-training",
+      "caption": "Push-T training timelapse",
+      "source": "result/push_t/full-10s.mp4",
+      "source_sha256": "8c34f4a575cf2d16e7d16320e2aba4042d0ce1a5082a742230c47748f913f031",
+      "video": "assets/videos/push-t-training.mp4",
+      "poster": "assets/posters/push-t-training.jpg",
+      "sha256": "b10a9d4297c14d7a3a0b42b57e6eb5a6875ac00a418c26bdc04f0f41178bf2c2",
+      "full_decode_passed": true,
+      "bytes": 2730243,
+      "duration_seconds": 10.016667,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "60/1"
+        }
+      ]
+    },
+    {
+      "id": "cap-unscrewing-training",
+      "caption": "Cap unscrewing training timelapse",
+      "source": "result/rotate_knob/full-10s.mp4",
+      "source_sha256": "fa39258f125e6450f7a5305953652377fbf8f4edee8842698d81c528a0e63810",
+      "video": "assets/videos/cap-unscrewing-training.mp4",
+      "poster": "assets/posters/cap-unscrewing-training.jpg",
+      "sha256": "a0c51bb6b6dcd76d1113d79f3f6c81c21c02afa52a3cc3a9fbe0635eaa68841b",
+      "full_decode_passed": true,
+      "bytes": 1563010,
+      "duration_seconds": 10.733333,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "60/1"
+        }
+      ]
+    },
+    {
+      "id": "gear-assembly-training",
+      "caption": "Gear assembly training timelapse",
+      "source": "result/insert-gear/full-10s.mp4",
+      "source_sha256": "e800e6e187ec510cbe149f43bb3a83d7049c2bdc7504207f5c67124c0449ab37",
+      "video": "assets/videos/gear-assembly-training.mp4",
+      "poster": "assets/posters/gear-assembly-training.jpg",
+      "sha256": "0e297e8f2777ae9e9d5dc0d0e48eaac31298f8cc9715443468dea9c22679e86a",
+      "full_decode_passed": true,
+      "bytes": 1876223,
+      "duration_seconds": 10.05,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "60/1"
+        }
+      ]
+    },
+    {
+      "id": "plug-insertion-training",
+      "caption": "Plug insertion training timelapse",
+      "source": "result/plug_power_socket/full-10s.mp4",
+      "source_sha256": "a039118a6e01df8ae2e8321bfdd7b9822394a4ff8b1c87e81e7880c1142a4e2a",
+      "video": "assets/videos/plug-insertion-training.mp4",
+      "poster": "assets/posters/plug-insertion-training.jpg",
+      "sha256": "995a527412c3ffe93ddf5d4942ffc8ff14883a6ac84e43b78397297029f07ef8",
+      "full_decode_passed": true,
+      "bytes": 2697095,
+      "duration_seconds": 10.0,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "60/1"
+        }
+      ]
+    },
+    {
+      "id": "cable-routing-training",
+      "caption": "Dual-branch cable routing training timelapse",
+      "source": "result/hang_double_strings/full-10s.mp4",
+      "source_sha256": "63eb434e0951533103bdfb23424e4b54b1d84997a351d68ee2d0bf585dc64f0c",
+      "video": "assets/videos/cable-routing-training.mp4",
+      "poster": "assets/posters/cable-routing-training.jpg",
+      "sha256": "ee4eb5374ea8b6770c0f27d1b9efa2eb2ecfe6b7610de35d45b80d84cc211bba",
+      "full_decode_passed": true,
+      "bytes": 1565097,
+      "duration_seconds": 10.0,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "push-t-recovery-1",
+      "caption": "Contact recovery",
+      "source": "result/push_t/run-4_Sub_02.mp4",
+      "source_sha256": "283061e7b6edba9fc7d4b614f90ed16d9e57cdc2d47f8088de4f7885fa165be5",
+      "video": "assets/videos/push-t-recovery-1.mp4",
+      "poster": "assets/posters/push-t-recovery-1.jpg",
+      "sha256": "6425a93665e4a0439b6bf4291f19879a7346a73e8659a9910d2917b359a2d34c",
+      "full_decode_passed": true,
+      "bytes": 378919,
+      "duration_seconds": 4.566667,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "push-t-recovery-2",
+      "caption": "Orientation adjustment",
+      "source": "result/push_t/run-4_Sub_03.mp4",
+      "source_sha256": "829cd3337438991b33ee85fe2ca4759a2c95fe3107934d444edd4cbea3f8585e",
+      "video": "assets/videos/push-t-recovery-2.mp4",
+      "poster": "assets/posters/push-t-recovery-2.jpg",
+      "sha256": "55df795b24fe58fa7fe49f8eafc1c4e7b107c9e8841698a1f862bc7d5ee5d841",
+      "full_decode_passed": true,
+      "bytes": 432063,
+      "duration_seconds": 5.566667,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "push-t-recovery-3",
+      "caption": "Object relocation",
+      "source": "result/push_t/run-4_Sub_04.mp4",
+      "source_sha256": "d779a2d01e9d3d45be46d712a7bf90268abd97e5b70998b787ad975ade2122d6",
+      "video": "assets/videos/push-t-recovery-3.mp4",
+      "poster": "assets/posters/push-t-recovery-3.jpg",
+      "sha256": "9df2459f8c459a360f8af5fe934db98efa7b74fbfbb18f3ec3c68804d69dfc17",
+      "full_decode_passed": true,
+      "bytes": 481503,
+      "duration_seconds": 5.566667,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "cap-unscrewing-recovery-1",
+      "caption": "Recovery example 1",
+      "source": "result/rotate_knob/disturb1.mp4",
+      "source_sha256": "8f8aa34bfb6f8a2daccfc4d056810bf2c0ac1d48df8b625e61356ae350e050cd",
+      "video": "assets/videos/cap-unscrewing-recovery-1.mp4",
+      "poster": "assets/posters/cap-unscrewing-recovery-1.jpg",
+      "sha256": "3ecc4f67dd1023dd35207aecc5148106dc03ecefd52082d4f38bf83b2e398e80",
+      "full_decode_passed": true,
+      "bytes": 155555,
+      "duration_seconds": 3.4,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "cap-unscrewing-recovery-2",
+      "caption": "Recovery example 2",
+      "source": "result/rotate_knob/Rotate-knov_disturb3.mp4",
+      "source_sha256": "192915fc779766d3c4a7f76b6260eefa23e0f4da7b34a3e9fe48efe22f22465b",
+      "video": "assets/videos/cap-unscrewing-recovery-2.mp4",
+      "poster": "assets/posters/cap-unscrewing-recovery-2.jpg",
+      "sha256": "e744667a73ff83cd07463b996c5129f76f9cd4a17fba813de2e05b672341c2e1",
+      "full_decode_passed": true,
+      "bytes": 176104,
+      "duration_seconds": 3.4,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "cap-unscrewing-recovery-3",
+      "caption": "Arm deflection",
+      "source": "result/rotate_knob/Rotate-knov_disturb4.mp4",
+      "source_sha256": "0dc9a44fa4fb28f4d0b292bcd2136218278b1f510cc86d7f7978480d3b13b93c",
+      "video": "assets/videos/cap-unscrewing-recovery-3.mp4",
+      "poster": "assets/posters/cap-unscrewing-recovery-3.jpg",
+      "sha256": "622dd77a379e0c22cdbd759f57c831944962b3f0691ff1764f4a75a100f95def",
+      "full_decode_passed": true,
+      "bytes": 193556,
+      "duration_seconds": 3.4,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "gear-assembly-recovery-1",
+      "caption": "Gear reorientation",
+      "source": "result/insert-gear/disturb1.mp4",
+      "source_sha256": "0f175ccf5e2b747d87556b88e071b4f246bdd406fb7d63645d04786bf4b793c3",
+      "video": "assets/videos/gear-assembly-recovery-1.mp4",
+      "poster": "assets/posters/gear-assembly-recovery-1.jpg",
+      "sha256": "6acff85919690a36baf5f41a9f712e04735b3a661e77266cdad1687cbc181b9c",
+      "full_decode_passed": true,
+      "bytes": 385230,
+      "duration_seconds": 6.0,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "gear-assembly-recovery-2",
+      "caption": "Arm disturbance",
+      "source": "result/insert-gear/disturb2.mp4",
+      "source_sha256": "d0dbe6ff007d9dc210a9e1c1446f38ae99f5eefc279a4b79d48b57135b726745",
+      "video": "assets/videos/gear-assembly-recovery-2.mp4",
+      "poster": "assets/posters/gear-assembly-recovery-2.jpg",
+      "sha256": "ea9a68be322242d1a00c52c4ff763bcbf5c2c0c841ee530f282a7392074268b7",
+      "full_decode_passed": true,
+      "bytes": 353569,
+      "duration_seconds": 6.0,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "gear-assembly-recovery-3",
+      "caption": "Contact recovery",
+      "source": "result/insert-gear/disturb3.mp4",
+      "source_sha256": "a3b263194c40f457a33bab78932b413e2f6b654d77e745f9c67b1b78829f788f",
+      "video": "assets/videos/gear-assembly-recovery-3.mp4",
+      "poster": "assets/posters/gear-assembly-recovery-3.jpg",
+      "sha256": "e7721eb8982d8ed446bcddf63e7bb2149e8009f87b43fc5dd29cf2084b7fd8e3",
+      "full_decode_passed": true,
+      "bytes": 433114,
+      "duration_seconds": 6.0,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "plug-insertion-recovery-1",
+      "caption": "Recovery example 1",
+      "source": "result/plug_power_socket/20260919-100126-074221_Sub_02.mp4",
+      "source_sha256": "38cf7cd093edf7bfe9af55e75977ec1a3563e261b1d758965f43169f167bd34a",
+      "video": "assets/videos/plug-insertion-recovery-1.mp4",
+      "poster": "assets/posters/plug-insertion-recovery-1.jpg",
+      "sha256": "48df5bec5aade2a4c3689af50b06edb38a6aaf8806defb6b332410b33d1141ab",
+      "full_decode_passed": true,
+      "bytes": 449778,
+      "duration_seconds": 5.066667,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "plug-insertion-recovery-2",
+      "caption": "Recovery example 2",
+      "source": "result/plug_power_socket/20260919-100126-074221_Sub_03.mp4",
+      "source_sha256": "27002532e54551206ff70bbd9c349952e80ee105df0f29b0a6ea59c3771b1090",
+      "video": "assets/videos/plug-insertion-recovery-2.mp4",
+      "poster": "assets/posters/plug-insertion-recovery-2.jpg",
+      "sha256": "00dca343f17a6544c8c45f712ded449f055dcad3d615f3d4bf2f2112bb06880c",
+      "full_decode_passed": true,
+      "bytes": 317342,
+      "duration_seconds": 4.433333,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "plug-insertion-recovery-3",
+      "caption": "Recovery example 3",
+      "source": "result/plug_power_socket/20260919-100126-074221_Sub_04.mp4",
+      "source_sha256": "a78de3e7fed80f737c4a93c849ff745604230ddd43cb19c2368c3a7dc2a1f595",
+      "video": "assets/videos/plug-insertion-recovery-3.mp4",
+      "poster": "assets/posters/plug-insertion-recovery-3.jpg",
+      "sha256": "cd58f8f992525c135fc51d04c051e2fbc3f90bc12c99f7d769f0adbb1b679f73",
+      "full_decode_passed": true,
+      "bytes": 600067,
+      "duration_seconds": 7.6,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "cable-routing-recovery-1",
+      "caption": "Cable lift",
+      "source": "result/hang_double_strings/disturb1.mp4",
+      "source_sha256": "2e3e01bad318b6b10a0a2c0f22b7169d0344019e282eff7c74e204073f8a28a0",
+      "video": "assets/videos/cable-routing-recovery-1.mp4",
+      "poster": "assets/posters/cable-routing-recovery-1.jpg",
+      "sha256": "c0d58fdfb9c10c60c2099ad90e6f6a7a61ed89b6591307badfc2d3103ed9e3a6",
+      "full_decode_passed": true,
+      "bytes": 375768,
+      "duration_seconds": 3.866667,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "cable-routing-recovery-2",
+      "caption": "Cable tug",
+      "source": "result/hang_double_strings/disturb3.mp4",
+      "source_sha256": "d0fe69326ae7a310ffda403be9ae95c342c43d3d927aa5fa51cba481a2581a1c",
+      "video": "assets/videos/cable-routing-recovery-2.mp4",
+      "poster": "assets/posters/cable-routing-recovery-2.jpg",
+      "sha256": "d9968fc9cd5370c1cb5344038c32c5fb568eca6d2da329c64a8c92bf01d54772",
+      "full_decode_passed": true,
+      "bytes": 399906,
+      "duration_seconds": 3.866667,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "cable-routing-recovery-3",
+      "caption": "Arm disturbance",
+      "source": "result/hang_double_strings/disturb4.mp4",
+      "source_sha256": "56d9b23cc50d0c226f4fe590c0e93f3cd7a7ef9e3aab17a74ae56aaa8a0e9a58",
+      "video": "assets/videos/cable-routing-recovery-3.mp4",
+      "poster": "assets/posters/cable-routing-recovery-3.jpg",
+      "sha256": "7bb0bcebe300b88e06b15c2bb18bd270ac624324c90fb64d60665677242dd767",
+      "full_decode_passed": true,
+      "bytes": 351563,
+      "duration_seconds": 3.866667,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    }
+  ],
+  "background": {
+    "source": "video_clip_wall.mp4",
+    "source_sha256": "2a5724d8fffd6b9dfadf4ced097d878592c991eb6ac2f0c18b60a9f66cb214e1",
+    "poster": "assets/posters/training-wall.jpg",
+    "sha256": "e8d1ccdd51546baf27feb908de996f7b1f8e14e57233b0043501bd6fef5f2eaf",
+    "usage": "decorative hero background only"
+  }
+}

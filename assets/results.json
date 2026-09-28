@@ -1,0 +1,238 @@
+{
+  "source": "main-6.pdf, Table I and Figure 1",
+  "uncertainty": "sample standard deviation across evaluation batches, not independent training runs",
+  "tasks": [
+    {
+      "package": "push_t",
+      "name": "Push-T",
+      "horizon": 150,
+      "minutes_to_90_percent": 23.3
+    },
+    {
+      "package": "rotate_knob",
+      "name": "Cap unscrewing",
+      "horizon": 200,
+      "minutes_to_90_percent": 18.2
+    },
+    {
+      "package": "insert_gear",
+      "name": "Gear assembly",
+      "horizon": 150,
+      "minutes_to_90_percent": 25.9
+    },
+    {
+      "package": "plug_power_socket",
+      "name": "Plug insertion",
+      "horizon": 200,
+      "minutes_to_90_percent": 40.7
+    },
+    {
+      "package": "hang_double_strings_2",
+      "name": "Dual-branch cable routing",
+      "horizon": 200,
+      "minutes_to_90_percent": 62.3
+    }
+  ],
+  "results": [
+    {
+      "method": "HG-DAgger",
+      "task": "Push-T",
+      "task_package": "push_t",
+      "success_rate_mean": 86.7,
+      "success_rate_sd": 2.9,
+      "length_mean": 66.6,
+      "length_sd": 1.8,
+      "horizon": 150
+    },
+    {
+      "method": "HG-DAgger",
+      "task": "Cap unscrewing",
+      "task_package": "rotate_knob",
+      "success_rate_mean": 76.7,
+      "success_rate_sd": 2.9,
+      "length_mean": 109.8,
+      "length_sd": 7.4,
+      "horizon": 200
+    },
+    {
+      "method": "HG-DAgger",
+      "task": "Gear assembly",
+      "task_package": "insert_gear",
+      "success_rate_mean": 38.3,
+      "success_rate_sd": 2.9,
+      "length_mean": 118.4,
+      "length_sd": 1.5,
+      "horizon": 150
+    },
+    {
+      "method": "HG-DAgger",
+      "task": "Plug insertion",
+      "task_package": "plug_power_socket",
+      "success_rate_mean": 5,
+      "success_rate_sd": 0,
+      "length_mean": 195.2,
+      "length_sd": 0,
+      "horizon": 200
+    },
+    {
+      "method": "HG-DAgger",
+      "task": "Dual-branch cable routing",
+      "task_package": "hang_double_strings_2",
+      "success_rate_mean": 5,
+      "success_rate_sd": 0,
+      "length_mean": 193.4,
+      "length_sd": 0,
+      "horizon": 200
+    },
+    {
+      "method": "HIL-SERL",
+      "task": "Push-T",
+      "task_package": "push_t",
+      "success_rate_mean": 16.7,
+      "success_rate_sd": 2.9,
+      "length_mean": 134.1,
+      "length_sd": 2.8,
+      "horizon": 150
+    },
+    {
+      "method": "HIL-SERL",
+      "task": "Cap unscrewing",
+      "task_package": "rotate_knob",
+      "success_rate_mean": 1.7,
+      "success_rate_sd": 2.9,
+      "length_mean": 198.5,
+      "length_sd": 2.7,
+      "horizon": 200
+    },
+    {
+      "method": "HIL-SERL",
+      "task": "Gear assembly",
+      "task_package": "insert_gear",
+      "success_rate_mean": 6.7,
+      "success_rate_sd": 2.9,
+      "length_mean": 143.9,
+      "length_sd": 2.3,
+      "horizon": 150
+    },
+    {
+      "method": "HIL-SERL",
+      "task": "Plug insertion",
+      "task_package": "plug_power_socket",
+      "success_rate_mean": 0,
+      "success_rate_sd": 0,
+      "length_mean": 200,
+      "length_sd": 0,
+      "horizon": 200
+    },
+    {
+      "method": "HIL-SERL",
+      "task": "Dual-branch cable routing",
+      "task_package": "hang_double_strings_2",
+      "success_rate_mean": 0,
+      "success_rate_sd": 0,
+      "length_mean": 200,
+      "length_sd": 0,
+      "horizon": 200
+    },
+    {
+      "method": "SiLRI",
+      "task": "Push-T",
+      "task_package": "push_t",
+      "success_rate_mean": 55,
+      "success_rate_sd": 5,
+      "length_mean": 100.3,
+      "length_sd": 2.8,
+      "horizon": 150
+    },
+    {
+      "method": "SiLRI",
+      "task": "Cap unscrewing",
+      "task_package": "rotate_knob",
+      "success_rate_mean": 81.7,
+      "success_rate_sd": 2.9,
+      "length_mean": 106,
+      "length_sd": 5.7,
+      "horizon": 200
+    },
+    {
+      "method": "SiLRI",
+      "task": "Gear assembly",
+      "task_package": "insert_gear",
+      "success_rate_mean": 10,
+      "success_rate_sd": 0,
+      "length_mean": 141.5,
+      "length_sd": 0,
+      "horizon": 150
+    },
+    {
+      "method": "SiLRI",
+      "task": "Plug insertion",
+      "task_package": "plug_power_socket",
+      "success_rate_mean": 0,
+      "success_rate_sd": 0,
+      "length_mean": 200,
+      "length_sd": 0,
+      "horizon": 200
+    },
+    {
+      "method": "SiLRI",
+      "task": "Dual-branch cable routing",
+      "task_package": "hang_double_strings_2",
+      "success_rate_mean": 0,
+      "success_rate_sd": 0,
+      "length_mean": 200,
+      "length_sd": 0,
+      "horizon": 200
+    },
+    {
+      "method": "ReF-HIL",
+      "task": "Push-T",
+      "task_package": "push_t",
+      "success_rate_mean": 100,
+      "success_rate_sd": 0,
+      "length_mean": 69.3,
+      "length_sd": 2.9,
+      "horizon": 150
+    },
+    {
+      "method": "ReF-HIL",
+      "task": "Cap unscrewing",
+      "task_package": "rotate_knob",
+      "success_rate_mean": 100,
+      "success_rate_sd": 0,
+      "length_mean": 42.4,
+      "length_sd": 1.4,
+      "horizon": 200
+    },
+    {
+      "method": "ReF-HIL",
+      "task": "Gear assembly",
+      "task_package": "insert_gear",
+      "success_rate_mean": 95,
+      "success_rate_sd": 5,
+      "length_mean": 40.1,
+      "length_sd": 5.6,
+      "horizon": 150
+    },
+    {
+      "method": "ReF-HIL",
+      "task": "Plug insertion",
+      "task_package": "plug_power_socket",
+      "success_rate_mean": 91.7,
+      "success_rate_sd": 2.9,
+      "length_mean": 64.4,
+      "length_sd": 5,
+      "horizon": 200
+    },
+    {
+      "method": "ReF-HIL",
+      "task": "Dual-branch cable routing",
+      "task_package": "hang_double_strings_2",
+      "success_rate_mean": 95,
+      "success_rate_sd": 5,
+      "length_mean": 78.3,
+      "length_sd": 7,
+      "horizon": 200
+    }
+  ]
+}
