@@ -44,17 +44,17 @@ python -m tools.inventory_media ../srt-video-clip --output docs/media-inventory.
 python -m tools.prepare_web_media ../srt-video-clip --output ../ReF-HIL-webpages
 ```
 
-The preparation tool produces a 1080p H.264/AAC overview from the master,
-960px-wide muted training and recovery clips, JPEG posters, and a manifest containing
+The preparation tool produces a 1080p AV1/AAC overview from the master,
+960px-wide muted AV1 training and recovery clips, JPEG posters, and a manifest containing
 source/output SHA-256 hashes. It strips container metadata, enables MP4
 fast-start, and fully decodes every generated video. Existing output videos
 are not overwritten. Playback acceleration already embedded in the source
 edits is preserved.
 
-Both branches track video extensions through Git LFS. Run `git lfs pull` when
-checking out the webpage. A static host needs the actual media bytes: publishing
-Git LFS pointer text will not produce playable videos. The webpage includes a
-local export step that materializes an anonymous static site for upload.
+The webpage branch tracks AV1 MP4 files directly in Git under `assets/videos/`.
+It does not use Git LFS. FFmpeg uses the software SVT-AV1 encoder (preset 8,
+CRF 32), preserves source timing, and enables MP4 fast-start. The static export
+verifies hashes and rejects accidental LFS pointer files.
 
 All page assets use relative paths. Author metadata and personal repository
 links are omitted for anonymous review; no external analytics or embedded

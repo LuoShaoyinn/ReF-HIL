@@ -87,4 +87,4 @@ IQL reference or fence.
 Code is released under [GNU GPLv3](LICENSE) (`GPL-3.0-only`). Authors are
 withheld while the paper is under review. The project page is prepared for
 anonymous hosting; it carries no personal profile or identifiable source link.
-Videos on the webpage branch are stored with Git LFS.
+AV1 videos on the webpage branch are tracked directly by Git under `assets/videos/`.

@@ -82,7 +82,8 @@ def main() -> None:
             "ffmpeg", "-nostdin", "-v", "error", "-n", "-i", str(source),
             "-map", "0:v:0", "-map_metadata", "-1", "-map_chapters", "-1",
             "-vf", "scale=1920:-2" if audio else "scale=960:-2",
-            "-c:v", "libx264", "-preset", "medium", "-crf", "24" if audio else "25",
+            "-c:v", "libsvtav1", "-preset", "8", "-crf", "32",
+            "-svtav1-params", f"lp={args.threads}", "-tag:v", "av01",
             "-pix_fmt", "yuv420p", "-threads", str(args.threads),
         ]
         if audio:
