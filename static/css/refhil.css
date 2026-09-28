@@ -13,7 +13,7 @@ body{font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--text-primary);bac
 .project-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(255,255,255,.97),rgba(255,255,255,.91),rgba(255,255,255,.97)),url('../../assets/posters/training-wall.jpg') center/cover;pointer-events:none}
 .video-heading{font-size:15px;font-weight:650;margin-bottom:14px;color:#244d3b}
 .task-recoveries{grid-column:1/-1;border-top:1px solid #dce5dc;padding-top:25px}
-.recovery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.recovery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .recovery-grid figure{margin:0;min-width:0}.recovery-grid video{display:block;width:100%;aspect-ratio:16/9;border-radius:9px;background:#173124}
 .recovery-grid figcaption{font-size:12px;font-weight:600;margin-top:10px;color:#49614e}
 .recovery-note{font-size:10px;color:#6e7c70;margin-top:16px}

@@ -13,7 +13,7 @@ policy improvement within the human action neighborhood.
 
 The project page presents five manipulation tasks: Push-T, cap unscrewing,
 gear assembly, plug insertion, and dual-branch cable routing. Each task includes
-an edited training-and-evaluation timelapse and three separate recovery scenes.
+an edited training-and-evaluation timelapse and four separate recovery scenes.
 The full project video presents the method, experiments, and comparisons.
 
 The manuscript reports 90% autonomous success after 18–63 minutes of active

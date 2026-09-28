@@ -468,6 +468,116 @@
           "avg_frame_rate": "30/1"
         }
       ]
+    },
+    {
+      "id": "push-t-recovery-4",
+      "caption": "Lighting change",
+      "source": "result/push_t/run-4_Sub_01.mp4",
+      "source_sha256": "b562fde20815245d828e13fd3831a0010daa490d2dbc8dbe25c049e8936a936e",
+      "video": "assets/videos/push-t-recovery-4.mp4",
+      "poster": "assets/posters/push-t-recovery-4.jpg",
+      "sha256": "d76d102e36481b332115b735ca76fe25b55ee7e496bc28f2065afad2352ec833",
+      "full_decode_passed": true,
+      "bytes": 550122,
+      "duration_seconds": 5.0,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "cap-unscrewing-recovery-4",
+      "caption": "Lighting change",
+      "source": "result/rotate_knob/disturb2.mp4",
+      "source_sha256": "4f469e741ba9b97c9dacef9f281bb7bbcff6d2bb789b003722e176f1fcfb02f6",
+      "video": "assets/videos/cap-unscrewing-recovery-4.mp4",
+      "poster": "assets/posters/cap-unscrewing-recovery-4.jpg",
+      "sha256": "c1a5814c4b5f0e95772c79e8d4065089e653048cc6df37064bd3567d079fbfd4",
+      "full_decode_passed": true,
+      "bytes": 314638,
+      "duration_seconds": 3.4,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "gear-assembly-recovery-4",
+      "caption": "Recovery example 4",
+      "source": "result/insert-gear/disturb4.mp4",
+      "source_sha256": "8dbe487d315a39d0b7c1ab586e8f39f20cd3bcc2dc7934b5c3c838c9a26390af",
+      "video": "assets/videos/gear-assembly-recovery-4.mp4",
+      "poster": "assets/posters/gear-assembly-recovery-4.jpg",
+      "sha256": "2bd8034f78d22ae9b4dd8e3da3a751469f2d6dc23391d21acd2a4000631fccd6",
+      "full_decode_passed": true,
+      "bytes": 357507,
+      "duration_seconds": 6.0,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "plug-insertion-recovery-4",
+      "caption": "Lighting change",
+      "source": "result/plug_power_socket/20260919-100126-074221_Sub_01.mp4",
+      "source_sha256": "9373dd0cb8623852c947b405ca817f183a59cd6e1b10e9c3429fbfb989f9853e",
+      "video": "assets/videos/plug-insertion-recovery-4.mp4",
+      "poster": "assets/posters/plug-insertion-recovery-4.jpg",
+      "sha256": "1527f827a1e2ad3d3a078f639fe2add634c58d5144df5fcc19feef10e0bdb48a",
+      "full_decode_passed": true,
+      "bytes": 626853,
+      "duration_seconds": 3.8,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
+    },
+    {
+      "id": "cable-routing-recovery-4",
+      "caption": "Lighting change",
+      "source": "result/hang_double_strings/disturb2.mp4",
+      "source_sha256": "7ec86eb04a4b435e154343347c7ca3f3da76408b922a1e3a6e011b2552b702ed",
+      "video": "assets/videos/cable-routing-recovery-4.mp4",
+      "poster": "assets/posters/cable-routing-recovery-4.jpg",
+      "sha256": "2dd3aaec9e544fffa76a0c445b12316c232a67bdf2476efc33b60e85e27a0aa3",
+      "full_decode_passed": true,
+      "bytes": 584091,
+      "duration_seconds": 3.866667,
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "av1",
+          "width": 960,
+          "height": 540,
+          "pix_fmt": "yuv420p",
+          "avg_frame_rate": "30/1"
+        }
+      ]
     }
   ],
   "background": {
