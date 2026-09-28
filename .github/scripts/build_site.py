@@ -9,7 +9,7 @@ import shutil
 from urllib.parse import unquote, urlsplit
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 class Assets(HTMLParser):
@@ -48,7 +48,7 @@ def main():
         if not path.is_relative_to(ROOT) or not path.is_file():
             raise FileNotFoundError(link)
     videos = list((ROOT / "assets/videos").glob("*.mp4"))
-    manifest = json.loads((ROOT / "assets/media.json").read_text())
+    manifest = json.loads((ROOT / ".github/media.json").read_text())
     for entry in manifest["videos"]:
         path = ROOT / entry["video"]
         with path.open("rb") as handle:
