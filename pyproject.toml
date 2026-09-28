@@ -1,0 +1,52 @@
+[project]
+name = "ref-hil"
+version = "0.1.0"
+description = "Human-reference value shaping and action fences for real-world human-in-the-loop reinforcement learning"
+readme = "README.md"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
+requires-python = ">=3.14"
+
+dependencies = [
+    "numpy>=1.26.0",
+    "scipy>=1.13.0",
+    "pyzmq>=26.2.1,<28.0.0",
+    "opencv-python>=4.9.0",
+    "tensorboard>=2.20.0",
+    "matplotlib>=3.11.2",
+]
+
+[project.optional-dependencies]
+cuda = ["torch", "torchvision", "triton"]
+rocm = ["torch", "torchvision", "triton_rocm"]
+actor = ["pyspacemouse>=1.1.4", "pyrealsense2", "glfw>=2.9.0", "PyOpenGL>=3.1.9", "ur-rtde>=1.6.0"]
+
+[tool.uv]
+conflicts = [[{ extra = "cuda" }, { extra = "rocm" }]]
+
+[tool.uv.sources]
+torch = [
+    { index = "rocm72", extra = "rocm", marker = "extra == 'rocm'" },
+    { index = "cuda132", extra = "cuda", marker = "extra == 'cuda'" },
+]
+torchvision = [
+    { index = "rocm72", extra = "rocm", marker = "extra == 'rocm'" },
+    { index = "cuda132", extra = "cuda", marker = "extra == 'cuda'" },
+]
+triton = [
+    { index = "cuda132", extra = "cuda", marker = "extra == 'cuda'" },
+]
+triton_rocm = [
+    { index = "rocm72", extra = "rocm", marker = "extra == 'rocm'" },
+]
+
+
+[[tool.uv.index]]
+name = "cuda132"
+url = "https://download.pytorch.org/whl/cu132"
+explicit = true
+
+[[tool.uv.index]]
+name = "rocm72"
+url = "https://download.pytorch.org/whl/rocm7.2"
+explicit = true

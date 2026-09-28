@@ -1,0 +1,1 @@
+"""USB insertion task profile."""

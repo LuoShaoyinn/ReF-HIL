@@ -1,0 +1,23 @@
+# Local environments and generated Python files
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Local configuration and experiment artifacts
+.env
+.env.*
+outputs/
+dataset/
+models/
+runs/
+videos/
+analysis-outputs/
+.worktrees/
+.publication/
+.vscode/
+tunableop_results*.csv

@@ -1,0 +1,91 @@
+"""Build anonymous webpage assets from the supplied video edits.
+
+Requires FFmpeg/ffprobe. Run this from main, with --output pointing to the
+webpages worktree. Source videos are never changed. No network upload occurs.
+"""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+
+from tools.inventory_media import probe
+
+
+CLIPS = (
+    ("overview", "video-3-1080p.mp4", "Full project video", True),
+    ("training-wall", "video_clip_wall.mp4", "Training montage (includes human interaction)", False),
+    ("push-t-training", "result/push_t/full-10s.mp4", "Push-T training timelapse", False),
+    ("cap-unscrewing-training", "result/rotate_knob/full-10s.mp4", "Cap unscrewing training timelapse", False),
+    ("gear-assembly-training", "result/insert-gear/full-10s.mp4", "Gear assembly training timelapse", False),
+    ("plug-insertion-training", "result/plug_power_socket/full-10s.mp4", "Plug insertion training timelapse", False),
+    ("cable-routing-training", "result/hang_double_strings/full-10s.mp4", "Dual-branch cable routing training timelapse", False),
+)
+
+
+def digest(path: Path) -> str:
+    with path.open("rb") as handle:
+        return hashlib.file_digest(handle, "sha256").hexdigest()
+
+
+def run(command: list[str]) -> None:
+    subprocess.run(command, check=True)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("source", type=Path)
+    parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--threads", type=int, default=4)
+    args = parser.parse_args()
+    if args.threads < 1:
+        parser.error("--threads must be positive")
+    missing = [name for _, name, _, _ in CLIPS if not (args.source / name).is_file()]
+    if missing:
+        parser.error(f"missing source files: {missing}")
+    videos = args.output / "assets/videos"
+    posters = args.output / "assets/posters"
+    videos.mkdir(parents=True, exist_ok=True)
+    posters.mkdir(parents=True, exist_ok=True)
+    rows = []
+    for slug, source_name, caption, audio in CLIPS:
+        source = args.source / source_name
+        target = videos / f"{slug}.mp4"
+        poster = posters / f"{slug}.jpg"
+        if target.exists() or poster.exists():
+            raise FileExistsError(f"refusing to overwrite existing assets for {slug}")
+        print(f"Preparing {slug}", flush=True)
+        command = [
+            "ffmpeg", "-nostdin", "-v", "error", "-n", "-i", str(source),
+            "-map", "0:v:0", "-map_metadata", "-1", "-map_chapters", "-1",
+            "-vf", "scale=1920:-2" if audio else "scale=960:-2",
+            "-c:v", "libx264", "-preset", "medium", "-crf", "24" if audio else "25",
+            "-pix_fmt", "yuv420p", "-threads", str(args.threads),
+        ]
+        if audio:
+            command += ["-map", "0:a?", "-c:a", "aac", "-b:a", "128k"]
+        else:
+            command += ["-an"]
+        command += ["-movflags", "+faststart", str(target)]
+        run(command)
+        run(["ffmpeg", "-nostdin", "-v", "error", "-n", "-ss", "1", "-i", str(target),
+             "-frames:v", "1", "-vf", "scale=960:-2", "-q:v", "3", "-map_metadata", "-1", str(poster)])
+        # Decode every frame, including audio in the full project video.
+        run(["ffmpeg", "-nostdin", "-v", "error", "-xerror", "-i", str(target), "-f", "null", "-"])
+        rows.append({
+            "id": slug, "caption": caption,
+            "source": source_name, "source_sha256": digest(source),
+            "video": target.relative_to(args.output).as_posix(),
+            "poster": poster.relative_to(args.output).as_posix(),
+            "sha256": digest(target), "full_decode_passed": True, **probe(target),
+        })
+    manifest = args.output / "assets/media.json"
+    manifest.write_text(json.dumps({"videos": rows}, indent=2) + "\n")
+    print(f"Prepared and decoded {len(rows)} videos -> {manifest}")
+
+
+if __name__ == "__main__":
+    main()

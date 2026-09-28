@@ -1,0 +1,19 @@
+{
+  "final-paper/baseline": "be11c0878fc301cf0660b6454f974e3f5510f269",
+  "final-paper/baseline-q-bilinear": "59cf09dc1ab0c4096e90756659ebe4d3e13b3c5e",
+  "final-paper/e2hil": "490f4935e8d6762dd9cfe74ee6c99b5181552c17",
+  "final-paper/gradient-toward-iql-inside-fence": "c713447816a77df88768125b441e111b92048d58",
+  "final-paper/hgdagger": "1604f9304839705c4d2948793b09591772148830",
+  "final-paper/hilserl": "bd55522d6c45a8fea6eb914fd7eb2ec19126ea81",
+  "final-paper/human-iql-grounded-ac": "b412a43c4bfc02d7808c64f4a69f6c5f75172f0e",
+  "final-paper/infinite-horizon": "7d53a5c58fecb79151374c3ea2bea9827c0d4e0a",
+  "final-paper/limit-action": "2e87f87db2be2b3c3722ccfb02b43b1b2b979536",
+  "final-paper/limit-exploration": "4034ad0015b1a3ed6f3c5f349b7daa8e9b6e3ef4",
+  "final-paper/main": "ffd7e61f3a46fe16f44bb31ad8e77a6f9ca0d866",
+  "final-paper/no-failure-state": "42bdd6d2d6f31abc1b6c486f831701d9a73ab343",
+  "final-paper/silri": "d67a176df45c7fe4166ddc1b57eac7c22f7d53af",
+  "final-paper/silri-deterministic": "ff7341ee4463cb9d034c9be1eb343e708c7e4d09",
+  "final-paper/vectorQ": "0c0d60e3854a3a00c1e82ba4cbc4502f3f9b357a",
+  "final-paper/wo-IQL_floor": "10daedee2d0d9285d774a0464c431f4e0377360f",
+  "final-paper/wo-limit-action": "1259c12fcae63d4df173db39524f3d1f8bb7f8ea"
+}

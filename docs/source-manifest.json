@@ -1,0 +1,822 @@
+{
+  "source_repository": "srt",
+  "source_commit": "53a30ed350f1572184ab6d63e329edd9cf6b4421",
+  "files": [
+    {
+      "path": ".python-version",
+      "source_sha256": "a876e0b10411037a012498b9fe18d9bc1df32ed8b722a13564dc944ddcfd9135"
+    },
+    {
+      "path": "actor/__init__.py",
+      "source_sha256": "0aa5ccc1108259b531911abcd0bd95c9bef315879f2f5c16e01f69428abce282"
+    },
+    {
+      "path": "actor/actor.py",
+      "source_sha256": "30f306d2a5902764ca8ae0e0a105fe7a60a2c1a4f536e188b77766858d5b2818"
+    },
+    {
+      "path": "actor/episode_snapshots.py",
+      "source_sha256": "9199ecd091d9effb7949363e31b6c8d7346ffb4a816cd9bb4d85dc0ab78328dd"
+    },
+    {
+      "path": "actor/fake_actor.py",
+      "source_sha256": "ee88ba61cde29ddbc4e7bc17a64c93f3fc7da7e3ab269b280eb8ddb3c3ba2229"
+    },
+    {
+      "path": "actor/operator/__init__.py",
+      "source_sha256": "0124ee0e462b325bab82cc562c4b3275ecb0ef7e53a406904e8d83cb3c60b6c1"
+    },
+    {
+      "path": "actor/operator/copilot.py",
+      "source_sha256": "851aebedfee14e5f1b7d6ca5ea9d3e229834cd5bc196e6e2e167e74dd31a6177"
+    },
+    {
+      "path": "actor/operator/run.py",
+      "source_sha256": "e122864204c03ff9e0a0c79a43d9af8c76b18abf5d8a37568c200f25401003fb"
+    },
+    {
+      "path": "actor/operator/spacemouse.py",
+      "source_sha256": "6cba28aa40bb6ff6304136e87711ef1d727313655105e9b14ca3b40cc3870d63"
+    },
+    {
+      "path": "actor/operator/test_copilot.py",
+      "source_sha256": "b4bd5123a9c42195c4e86eec320e3746945f8f6f0a0a27465ed459c775810f09"
+    },
+    {
+      "path": "actor/operator/test_run.py",
+      "source_sha256": "f0384b4b66728f8b94a52a89ee7100390b87c79513466f1ad47d4c4a5708608e"
+    },
+    {
+      "path": "actor/operator/test_toggle.py",
+      "source_sha256": "1df6cf08fb79fdc0679f0987bad7bf868b18cb18fdb8a88740cd6cb57f96ff6d"
+    },
+    {
+      "path": "actor/operator/toggle.py",
+      "source_sha256": "0eef31e0c016b28edd28ca050dfed3bbfaaf708d0c699e9666668340e27d25ee"
+    },
+    {
+      "path": "actor/record_demo.py",
+      "source_sha256": "c63e1185e1ad3686e92109d6dc5a5986590fa4153f734d8b7870bc516e5fd9f8"
+    },
+    {
+      "path": "actor/recorder.py",
+      "source_sha256": "00335a834374c4c90c878960adb50e1042a0f4c2e509019733ff62b28fdfeb15"
+    },
+    {
+      "path": "actor/robot/__init__.py",
+      "source_sha256": "8f65b02a684e104b1487923726effc4edd5a5202e0895f9b57a2e47b831687d9"
+    },
+    {
+      "path": "actor/robot/action.py",
+      "source_sha256": "414948001092af4f25800c01ced3c5951bd69c9588970478eec739ed9d397263"
+    },
+    {
+      "path": "actor/robot/rotation.py",
+      "source_sha256": "29e93df2b4854a3cfadeee2e5de1b83be1cfee679fe43e5e2ee8bf89342d4e13"
+    },
+    {
+      "path": "actor/robot/run.py",
+      "source_sha256": "83dd9f4c4be9b8949ec09570c469e205174208a01b0dd2f71d1036dd942314ab"
+    },
+    {
+      "path": "actor/robot/test_action.py",
+      "source_sha256": "3a0c90eb367f702cf7a7199512f8f1a8c08ba54d54389a6f84b8590e76146859"
+    },
+    {
+      "path": "actor/robot/test_force_mode.py",
+      "source_sha256": "7f3061e5f7e95ecc15008995b7c14d0f2402420430cf8ad35b8f1742626fd283"
+    },
+    {
+      "path": "actor/robot/test_impedance_control.py",
+      "source_sha256": "df16de6d0f345b31f02d4fada7a84b91803df77215d1f9de45da0071fa5a9118"
+    },
+    {
+      "path": "actor/robot/test_rotation.py",
+      "source_sha256": "8b4c13edb86c65d4b66b391c16ba1f11c81a3daa0529ab374af29426d28f8687"
+    },
+    {
+      "path": "actor/robot/ur5e/__init__.py",
+      "source_sha256": "1dab1c992785f6f7a1a1fac71132adf962c68e1fee9ee760f6b1962ba6abd9c3"
+    },
+    {
+      "path": "actor/robot/ur5e/global_video.py",
+      "source_sha256": "cad481ac718505a54fb534ad1ae0f1621b1b6e6c5701bd0b35a115eac24ea1a6"
+    },
+    {
+      "path": "actor/robot/ur5e/realsense_camera.py",
+      "source_sha256": "bf739468f6b63da40086a9cb3dcb43017781a94c861332cec164787792646fd2"
+    },
+    {
+      "path": "actor/robot/ur5e/robotiq_gripper.py",
+      "source_sha256": "66abab1e7351a87396f3c5cb9764fa2ceb559e97cd428cc17f97e57577e7e482"
+    },
+    {
+      "path": "actor/robot/ur5e/ur5e_base.py",
+      "source_sha256": "097c7a4cc9600cfab91581d927886a64be18935df970e5b64576f3c9baba77d6"
+    },
+    {
+      "path": "actor/robot/ur5e/ur_impedance_control.py",
+      "source_sha256": "64418269f2c734cce523bd17480f0ecde181269cb04ba69cb2e6f8ffbc2cc896"
+    },
+    {
+      "path": "actor/runtime.py",
+      "source_sha256": "5f235645530678756fad595f029593eec946f5042101344dcb0c8093d3f62041"
+    },
+    {
+      "path": "actor/storage.py",
+      "source_sha256": "59d123680950a0f534c27dc4ce71628ba2d2a29132c574253d47dce85efe9b11"
+    },
+    {
+      "path": "actor/success/__init__.py",
+      "source_sha256": "cf080a0fdea2ece15a32f42c3633e6ccec6e6c6289d842fffed027a26fbd98cf"
+    },
+    {
+      "path": "actor/success/base.py",
+      "source_sha256": "5c346cd009c0b77fbe79e7b212aecf4b3451608fc4e25dcdedb8019b4fa65c5d"
+    },
+    {
+      "path": "actor/success/human_classifier.py",
+      "source_sha256": "6db5fa3168a7f71d9d847061bb2ca4aff13a3a598a8c75c5c3fa311cdbbf94f8"
+    },
+    {
+      "path": "actor/success/resnet_classifier.py",
+      "source_sha256": "7cf3047c6803a22ade8b6ad6c1242881c5d02c98099a5254bc11465dfa59d76d"
+    },
+    {
+      "path": "actor/success/task_oracle.py",
+      "source_sha256": "977529f87c425598f484d12492b400f918e2537f9bfe78bd52887cd3c262dc0f"
+    },
+    {
+      "path": "actor/success/test_task_oracle.py",
+      "source_sha256": "a523d059f5bc7b26de907f163f6159d0fed7e4a2debcb62e5498d1cfcd3543cd"
+    },
+    {
+      "path": "actor/terminal_success.py",
+      "source_sha256": "6dec0392f936ccad276184f4d0431cfb7f8e341de17cb4e628666084979cef23"
+    },
+    {
+      "path": "actor/test_actor.py",
+      "source_sha256": "134f70450a85ed6834b21b43701e30262f036a182ea9238ba7249e54097607c7"
+    },
+    {
+      "path": "actor/test_episode_snapshots.py",
+      "source_sha256": "963f21534cdb9fd43d751e599aa17e8085b1c2e50bfbc3c3c8202a3ea331cc3f"
+    },
+    {
+      "path": "actor/test_recorder.py",
+      "source_sha256": "84e5156c22b249329d827bbd6a3f5cf582967c8069388aa784f8692f0478bede"
+    },
+    {
+      "path": "actor/test_storage.py",
+      "source_sha256": "4e021388dc0a57100cd1f7f13a59d07d2e23faea6bdaf2754518fd600f715b51"
+    },
+    {
+      "path": "actor/test_transport.py",
+      "source_sha256": "b979caea77decf42917b1be07d4babb0eb2e049006b17abda6437526464a0727"
+    },
+    {
+      "path": "actor/test_validation.py",
+      "source_sha256": "4e1257c4d6f15c0b675a5b6c7414007d9d7aa0af871d38c58e6bbc9747d70424"
+    },
+    {
+      "path": "actor/test_zmq_pipeline.py",
+      "source_sha256": "c45d913d7a144f3e97f733afd9b442d477d0c175b761aba5e51cfa2b1437d727"
+    },
+    {
+      "path": "actor/transport.py",
+      "source_sha256": "0c5b96cc7a978e25b4f2da391a98474dc86ee168e911ceef9bb21cf4458e2df0"
+    },
+    {
+      "path": "actor/validate.py",
+      "source_sha256": "8edaa58c449b3130f9fc6558fc47080b8342af9ad305f321aba58e39b2aeb0fc"
+    },
+    {
+      "path": "actor/validation.py",
+      "source_sha256": "ef02099fb9c2336261e4810c6f9c484c611024d07e3aab3cfbf8b3b702795c51"
+    },
+    {
+      "path": "learner/__init__.py",
+      "source_sha256": "aafce23af91d34ca23eed262d0348f6c4daab770875614cab2552c3a8efb4f8a"
+    },
+    {
+      "path": "learner/action_proximity.py",
+      "source_sha256": "08f83f2feb81040c98fe666eaa20769dac9340834d7818e83c29e61e7c88e456"
+    },
+    {
+      "path": "learner/action_radius_calibration.py",
+      "source_sha256": "4147bacabd9ce81104e5e5eca1914fd53610553bbfb2bcf423a65ef8c408e05d"
+    },
+    {
+      "path": "learner/actor_optimization.py",
+      "source_sha256": "1343e5112fded52f4e0dccce4cc766eaabe3671c99c8ed3b360bdccd0b187d65"
+    },
+    {
+      "path": "learner/checkpoint.py",
+      "source_sha256": "f1c3c47d5fa452ce411969409d672d9c1ffeeea08bfae992898d326bc5b07f51"
+    },
+    {
+      "path": "learner/constrained_critic.py",
+      "source_sha256": "7187e17ad99f66ad90711cd68f74921d0af8605905f0e3a496566a18a65531df"
+    },
+    {
+      "path": "learner/constrained_learning.py",
+      "source_sha256": "2601baa2baaaea2fbe72f787a4352567486b63d61d7c3b848708350990470787"
+    },
+    {
+      "path": "learner/failure.py",
+      "source_sha256": "088e11b7ecff46bb6ab226846f2591948a1dda14f5f3c6dd6c1b2f9a0ea00ac9"
+    },
+    {
+      "path": "learner/iql_floor.py",
+      "source_sha256": "90c8fe63ca8389f1ca65997da7680f767c8ebfadcc12a2be143bce596cc75abc"
+    },
+    {
+      "path": "learner/iql_floor_runtime.py",
+      "source_sha256": "6e702973cb7baaefead93e7d260800f83966b87b8be6dd7d4be247698b9a22fc"
+    },
+    {
+      "path": "learner/iql_modules.py",
+      "source_sha256": "0162bd8eb5658432690f56f18adbe4e081290ef7e1cc17db0974cb46d9b009c6"
+    },
+    {
+      "path": "learner/learner.py",
+      "source_sha256": "8e051f7902c1650650a308ac7c0759370a77300405cbd8f72600af6747fa3730"
+    },
+    {
+      "path": "learner/observation_encoder.py",
+      "source_sha256": "e9285ab77ae343b5a4d3f27ac8f672b2d28fe1a4dc010dac0648d896d75ca2e6"
+    },
+    {
+      "path": "learner/policy.py",
+      "source_sha256": "8964c8795e7f66773565425b197ed77ac900973ad25c34467ccf65086eaa6cc8"
+    },
+    {
+      "path": "learner/replay.py",
+      "source_sha256": "79b7c2001579639210f6e976d4931d666df6b5928c155935fe1a857b39f63f95"
+    },
+    {
+      "path": "learner/runtime.py",
+      "source_sha256": "4ffa40762c8cec0cea4aa9a27e98a277083e1b02da89e7705e5e51b2aaa247bf"
+    },
+    {
+      "path": "learner/subset_replay.py",
+      "source_sha256": "5d6d0cec73c0fac46f5c989a0176c8ecbe62977f6b404261cadbdebe265bc20d"
+    },
+    {
+      "path": "learner/test_actor_optimization.py",
+      "source_sha256": "5de5dd594110eaa274815540fac0de4fbb6464996da9fa6edeb0b12d044bc09a"
+    },
+    {
+      "path": "learner/test_algorithm.py",
+      "source_sha256": "24e5de9b6dd2e62659ac7ce0341d1fd0fbabf2fdbc3202a430773533e047f718"
+    },
+    {
+      "path": "learner/test_batched_replay.py",
+      "source_sha256": "7c36200e50ac6d6591422a2cf2781ca423f8afc76d3afe887692c88f9d9c1a71"
+    },
+    {
+      "path": "learner/test_checkpoint.py",
+      "source_sha256": "9244f7f3036a17bd3e92c75c4b7b25a3e5cc0b0ffffc25de0320726451e20254"
+    },
+    {
+      "path": "learner/test_constrained_critic.py",
+      "source_sha256": "15103fd8b105089832ecdd78302ae70e5534502643bc445cea8d8cb22851cafc"
+    },
+    {
+      "path": "learner/test_failure.py",
+      "source_sha256": "ec69c57c1cd1c2d71a37ffde8368d091d1dfaa121c72984c8b1a11c2589788a5"
+    },
+    {
+      "path": "learner/test_iql_floor.py",
+      "source_sha256": "e2ed66ed60f3358c0201720762217de93849712de195adf9fbfdaf1bb3608cbe"
+    },
+    {
+      "path": "learner/test_suffix_base_floor.py",
+      "source_sha256": "8089d831b65420859586d3c3bd9ef3f092e92c44fdee74c75bbe09bc1ebdf09e"
+    },
+    {
+      "path": "learner/test_unrecoverable.py",
+      "source_sha256": "9de6429836b333590c45a921da1d4a002a41e59c73d10eaeec886c8047481bb4"
+    },
+    {
+      "path": "learner/training.py",
+      "source_sha256": "eacc5a9e2d3270507bf713fa8a1a6a0cd9ff77989d6bac7f6fedb1ec52d88e78"
+    },
+    {
+      "path": "learner/unrecoverable.py",
+      "source_sha256": "42e88a459c52a91a5a9662898aa88201466c903e5f4dba891557b11ab5fcfbaa"
+    },
+    {
+      "path": "pyproject.toml",
+      "source_sha256": "657acfa6e16ff8e5eb79add45b3215fb7aa9460d6a346a8169b0d3cd56e5241d"
+    },
+    {
+      "path": "shared/__init__.py",
+      "source_sha256": "0ea3e242d190dc0969646262bbe458b534089cc6d0036927789ba6d4d2dea9e5"
+    },
+    {
+      "path": "shared/actor_network.py",
+      "source_sha256": "e27c265ee9a943b8097be681df42d0f3650c9a7ef93979e8528e9e850823dfcd"
+    },
+    {
+      "path": "shared/experiment_identity.py",
+      "source_sha256": "461361c7d337c4555bceccd9bd8346ea9bf0c3794875127be2ac1a1479316d32"
+    },
+    {
+      "path": "shared/policy.py",
+      "source_sha256": "b872f9c4d0d40ddf49f67b0931531947c1c94a94ba0bd09bfaf2946fa79e4464"
+    },
+    {
+      "path": "shared/protocol.py",
+      "source_sha256": "fbce882786fa9fa727bf0fbdb1bca2f6c81434655edb7a99996397097735bebe"
+    },
+    {
+      "path": "shared/task/__init__.py",
+      "source_sha256": "d34ad2b74a08870fc0d30b0e0eaf856e9162d5a3726e81cfa6fca395b23e7429"
+    },
+    {
+      "path": "shared/task/base.py",
+      "source_sha256": "4d6eb9883f04b8192ffcbba0a328c3b655f4a47d4118c852c1a338941c2a0968"
+    },
+    {
+      "path": "shared/task/gripper_calibration.py",
+      "source_sha256": "9c53083dcba1f4e332e2572be36b90f85c818c2c4bd5c1235beb957190db8d50"
+    },
+    {
+      "path": "shared/task/gripper_smoothness.py",
+      "source_sha256": "ff9f92e4a18847f211b56232f494dd0ed98a9b6890d6d7263331a8e295f59140"
+    },
+    {
+      "path": "shared/task/manipulation_classifier.py",
+      "source_sha256": "b8a95f6a52230461e41f88450a817ca4a5e5491325b20a2b9adb312693b1db82"
+    },
+    {
+      "path": "shared/task/manipulation_config.py",
+      "source_sha256": "d08b923138d4cd7f23364df6781452feaceeb6911c0117c24c214b4ee99cd311"
+    },
+    {
+      "path": "shared/task/manipulation_modeling.py",
+      "source_sha256": "a076e132910114d026c78cc6a9683ec34a9fcad664c0ee7a7b88b8a8af60fff6"
+    },
+    {
+      "path": "shared/task/manipulation_robot.py",
+      "source_sha256": "11580c9a42d6a5be532f5eed1aba44fea665db08624eca20f353ebd57cf3332f"
+    },
+    {
+      "path": "shared/task/test_base.py",
+      "source_sha256": "a3ed88fa13fdf3394f76bd2f40d8f80e6e5a3007eef66bfe5a730209c60f9002"
+    },
+    {
+      "path": "shared/task/test_gripper_calibration.py",
+      "source_sha256": "c74758560351e4cf73489a0f5bc3900a5412f378e1e26f66aefa5787331cac87"
+    },
+    {
+      "path": "shared/task/test_gripper_smoothness.py",
+      "source_sha256": "59b269f4a1e93c89560e003ddbff20970df15b70e755d1b5573d7f1d48feb9ab"
+    },
+    {
+      "path": "shared/test_experiment_identity.py",
+      "source_sha256": "68e35910860fd9a07f0bccac70a399e6bb8d642f7461f64fb94ab91eb06b0f31"
+    },
+    {
+      "path": "shared/zmq.py",
+      "source_sha256": "351fa6d92c6285bc11574d6e5dd0a290099d4ed545de4f7722efca8653414bf2"
+    },
+    {
+      "path": "tasks/README.md",
+      "source_sha256": "e88946b6126955896c186a070a6a7d453c5737d912244d892238bbc1b40a031a"
+    },
+    {
+      "path": "tasks/__init__.py",
+      "source_sha256": "ac4124aa40bda9187fe583ba38abed6c5e0ea4a144b5ffbbde0d5a179c00b240"
+    },
+    {
+      "path": "tasks/assemble/__init__.py",
+      "source_sha256": "2e89c92c72218bb9f4a8879a72558123fe6c9aaacfd283cd456633a06c3defb6"
+    },
+    {
+      "path": "tasks/assemble/classifier.py",
+      "source_sha256": "c9ff4eba7ee65cae58117865aba742a760bc53f0936b06a862c37da29f9ba126"
+    },
+    {
+      "path": "tasks/assemble/config.py",
+      "source_sha256": "cc3aafd0756b239120d24fd101a9ffadcf771f382a57e0e9a5e720c3ba616090"
+    },
+    {
+      "path": "tasks/assemble/learner.py",
+      "source_sha256": "c24968b8d1d814a008681d6cce306b45e99ad8d43643d99a6e731802d53ecdc1"
+    },
+    {
+      "path": "tasks/assemble/modeling.py",
+      "source_sha256": "643b5ed98e4636db1244cb26a044590c1b429933d35b12c14bbd0b38ced3e427"
+    },
+    {
+      "path": "tasks/assemble/reset.py",
+      "source_sha256": "10a439d04d3c2581df40bd95ad46bf69cff9e3184754c72875f6d7410f3a25b4"
+    },
+    {
+      "path": "tasks/assemble/robot.py",
+      "source_sha256": "0bd690ac52cd751ba58c43b1939201e01bbfcdeaeb7a32ddeac37691fdc9950b"
+    },
+    {
+      "path": "tasks/assemble/test_classifier.py",
+      "source_sha256": "c80a1fd183e7197f3a64b24144a83e135ba92e3d032502bf99ea0c68943fbdee"
+    },
+    {
+      "path": "tasks/assemble/test_modeling.py",
+      "source_sha256": "8ada08ab005f87154300c57e447b0967911fdd52709399bd027e5679e9c22a29"
+    },
+    {
+      "path": "tasks/assemble/test_reset.py",
+      "source_sha256": "ead37a0f28f2ba7d4b7403d1c6cb0e44fb136648641ef04103aae86008d2fcd5"
+    },
+    {
+      "path": "tasks/assemble/test_robot.py",
+      "source_sha256": "f2ebd40b50f01fd27b25757757feb345ab78504c12d365f642ab70b5f232949b"
+    },
+    {
+      "path": "tasks/gear/__init__.py",
+      "source_sha256": "25b608c259221270c3412c62ccc523a8e66cf7c369a199445e76910b23a108d0"
+    },
+    {
+      "path": "tasks/gear/classifier.py",
+      "source_sha256": "f9e0be63a5493c72de8332764905d0ca1fe3b57a810c895c27530ae7cc81f177"
+    },
+    {
+      "path": "tasks/gear/config.py",
+      "source_sha256": "7d2569ca96b64e5b2be46216f7810d90f268043a6ab38a540d7c94d933cc35ce"
+    },
+    {
+      "path": "tasks/gear/learner.py",
+      "source_sha256": "5d5ffc39dadac24fc53a9b4a43cd68e070a2c7a162e2e7240e3d15d7c0bb82cd"
+    },
+    {
+      "path": "tasks/gear/modeling.py",
+      "source_sha256": "aec77ace9e3182bae39e6a8e5e94ed3c18e2130d9d71b5d096decb03d586269a"
+    },
+    {
+      "path": "tasks/gear/robot.py",
+      "source_sha256": "3637835b0fd1db7c9501aa704fc600ea22d19b4dd8505422abca76185dd6dd33"
+    },
+    {
+      "path": "tasks/gear/test_modeling.py",
+      "source_sha256": "34c50de1f88917437b8702f8c1a0084271328cf2548c0070675166a5ba56e883"
+    },
+    {
+      "path": "tasks/gear/test_robot.py",
+      "source_sha256": "3ec26b3067426d06958aba77c1859eceb5e9c975e7eb032cf64984e3e042d8e4"
+    },
+    {
+      "path": "tasks/hang_double_strings_2/__init__.py",
+      "source_sha256": "09e9a548e1fb55ba4aa02e621e6948a479ac489fe16c0af2cdb81f18c3b51372"
+    },
+    {
+      "path": "tasks/hang_double_strings_2/classifier.py",
+      "source_sha256": "77fe2c055d410c72870ebd4f5a95a3046dc64e79bc1507c82ac42ca9934e9764"
+    },
+    {
+      "path": "tasks/hang_double_strings_2/config.py",
+      "source_sha256": "9ccc7496ca006f47fdd1718008f0c3d203a5ddbd04167d6be7f5aebae9d49c56"
+    },
+    {
+      "path": "tasks/hang_double_strings_2/learner.py",
+      "source_sha256": "fad78df0cc03cf84dc9efeb80086abeb748e50a289b98736484b7cdb9995a188"
+    },
+    {
+      "path": "tasks/hang_double_strings_2/modeling.py",
+      "source_sha256": "4d8b206609923aa8209248adda51b59cc58b2d0a80c222f5950ec2bfee0f2874"
+    },
+    {
+      "path": "tasks/hang_double_strings_2/robot.py",
+      "source_sha256": "78ce58d60d52ba883418d2dda5fab05b046dc856fde50cbc4b2fc419a5b4a470"
+    },
+    {
+      "path": "tasks/hang_double_strings_2/test_config.py",
+      "source_sha256": "2f29c1ffdef9944e107623c016102e78d142ed4d6ea3ecd3627d156f7b722b3a"
+    },
+    {
+      "path": "tasks/insert_gear/README.md",
+      "source_sha256": "1a08f0d7a21a05c1780a72a2759aeea151f8ad0413a660e3d226acb062639334"
+    },
+    {
+      "path": "tasks/insert_gear/__init__.py",
+      "source_sha256": "cf2074c16f756df5cf2c5818b5b9379463147e6cb51b4bcc7b762ae72e5b644d"
+    },
+    {
+      "path": "tasks/insert_gear/classifier.py",
+      "source_sha256": "6de0a606c58ad5ec21c054815a33f107fab4932a6284fcbc6861c4d39c5def4f"
+    },
+    {
+      "path": "tasks/insert_gear/config.py",
+      "source_sha256": "0daf831eb151c3659c664afa6481886ecc22aedf3986ab58723fda860fc71305"
+    },
+    {
+      "path": "tasks/insert_gear/learner.py",
+      "source_sha256": "a4b735578cca8d0c5770abd29579bfe6129e0ff468e1df8fadac3ecd790dab3d"
+    },
+    {
+      "path": "tasks/insert_gear/modeling.py",
+      "source_sha256": "6b421223a9cd05b2b519b7259670f738dd4ee1bba7bda78d3176332d44600a26"
+    },
+    {
+      "path": "tasks/insert_gear/robot.py",
+      "source_sha256": "eb4492bf095c47b0386ef8844c199feef39d34184166e4d8018bfb5f403c5576"
+    },
+    {
+      "path": "tasks/insert_gear/test_modeling.py",
+      "source_sha256": "44970b77374c00880c2298f5e2e910f98f80c8d4aa6fde31c4ccfa3436bc733b"
+    },
+    {
+      "path": "tasks/insert_gear/test_robot.py",
+      "source_sha256": "f42fb43c8f9d26ae53bbf75e79e158252e5d43795d1df622fc2f0cb82ada7821"
+    },
+    {
+      "path": "tasks/insert_rj45/__init__.py",
+      "source_sha256": "4a3420a2f57ecd035ad8b1841c2c56fb96cd295eef4c68173f0c93677ba1cabe"
+    },
+    {
+      "path": "tasks/insert_rj45/classifier.py",
+      "source_sha256": "9d0c66a54ebe81b89a58338f8b29259110c5f7f780f821cbda3cefb052c59c41"
+    },
+    {
+      "path": "tasks/insert_rj45/config.py",
+      "source_sha256": "84d2fe1379d70fe09a6d7ba86bd016de79b7bb30b99c2946643d35f14db3c2c5"
+    },
+    {
+      "path": "tasks/insert_rj45/learner.py",
+      "source_sha256": "33cf1038b62fdad127a65003b04826cb81e62a7abddf9265ebc551b59f3df362"
+    },
+    {
+      "path": "tasks/insert_rj45/modeling.py",
+      "source_sha256": "03b7485136374982e0401d201b6f042121f9c514f8016a4302c7eb615c3aeeee"
+    },
+    {
+      "path": "tasks/insert_rj45/robot.py",
+      "source_sha256": "82032b98f6462c8b79bc1595e1a904237605e2deb70f465fe6f50b4e70a5d2fa"
+    },
+    {
+      "path": "tasks/insert_rj45/test_classifier.py",
+      "source_sha256": "8a92a7cd6e4c9f6f0d3638756248559bf66940758d5258f009491b6f44843fe8"
+    },
+    {
+      "path": "tasks/insert_rj45/test_config.py",
+      "source_sha256": "9ea6090474713d9d216aaa515767145d78b32a10d49218ac063d9e56c142ff05"
+    },
+    {
+      "path": "tasks/insert_usb/__init__.py",
+      "source_sha256": "a74c19d4c41309fd0ab51c1903449cea2df4b09408e1ea7d40e020380aeed81f"
+    },
+    {
+      "path": "tasks/insert_usb/classifier.py",
+      "source_sha256": "bf8b4c72333ae89b9654e7b43ad3d488d9c6fb5eb62127923ae7799b80d8d866"
+    },
+    {
+      "path": "tasks/insert_usb/config.py",
+      "source_sha256": "2efe5da11f303ee73307a3915006f52d84115330527a08e7954f6168a6376ec7"
+    },
+    {
+      "path": "tasks/insert_usb/learner.py",
+      "source_sha256": "96c61dc889b969e2e0455a3da4edf251fcd5a7eda427a00699e486ed778994b9"
+    },
+    {
+      "path": "tasks/insert_usb/modeling.py",
+      "source_sha256": "fa22c13d461880c063a4f62cf6e943649cc675b152c24ef5c217d27f4d2d8bb5"
+    },
+    {
+      "path": "tasks/insert_usb/robot.py",
+      "source_sha256": "04c7be00f70b48800d7eac70c7bd0a357bf5224aee45df078af7c0ec74b36251"
+    },
+    {
+      "path": "tasks/insert_usb/test_classifier.py",
+      "source_sha256": "005f1b2be440b83bada521a9b2b30dccdda21224a0e97fafda98264c7beac196"
+    },
+    {
+      "path": "tasks/insert_usb/test_config.py",
+      "source_sha256": "a240f613a7cfb8368e18cede0a66b4b6e0a11e071b96a70ec9b8c0d97476c1c9"
+    },
+    {
+      "path": "tasks/plug_in/__init__.py",
+      "source_sha256": "3fa29ed1b8f37bf4475cd52a005c282b63dbdac62e28e4089ae45ad8d8d9e9d4"
+    },
+    {
+      "path": "tasks/plug_in/classifier.py",
+      "source_sha256": "43e763c7749cecc063315d73c12637987114443f09ad9ca054335c09e8fb6393"
+    },
+    {
+      "path": "tasks/plug_in/config.py",
+      "source_sha256": "ce4f4ccd6d733059ec7c96afcfecdf2e158b0012414d40e266dafae2b5350376"
+    },
+    {
+      "path": "tasks/plug_in/learner.py",
+      "source_sha256": "ca5f8ef733314037829d2e5fec26321d2f86bbb8fcb9e0e074522b1779452fde"
+    },
+    {
+      "path": "tasks/plug_in/modeling.py",
+      "source_sha256": "8a5f5553f4dee891aa5a3ad38e7e47377533517ebf695a23773ad7322c2db859"
+    },
+    {
+      "path": "tasks/plug_in/robot.py",
+      "source_sha256": "20684df4ce70d4fce97a1b24499ee7f24b71a43a49886e018524ba7f8f59fe59"
+    },
+    {
+      "path": "tasks/plug_in/test_classifier.py",
+      "source_sha256": "b8adc67cf87f16b6cc67306e97c35f3e40350d903dd2fe6d564344e57b6c7d4c"
+    },
+    {
+      "path": "tasks/plug_in/test_config.py",
+      "source_sha256": "204b8351046916802f62b4e3ff7524e85df5fea9c6f265d036326d1bc5d25c9f"
+    },
+    {
+      "path": "tasks/plug_in/test_modeling.py",
+      "source_sha256": "0503940eafdb3e186a6bd83fd917f6aef41a06b9d7dbceaf62aab2dd74f0705f"
+    },
+    {
+      "path": "tasks/plug_power_socket/__init__.py",
+      "source_sha256": "39a522cf42fe6d62464e97c3ba8277537a9c2df402530bf8750a6f69807c1f5c"
+    },
+    {
+      "path": "tasks/plug_power_socket/classifier.py",
+      "source_sha256": "f1dba9f12f4b6720e083b1a82202a381f40c740266fcf2668dc7f409441e5992"
+    },
+    {
+      "path": "tasks/plug_power_socket/config.py",
+      "source_sha256": "5f364048aec7258a51ccf20fb70ddb5dea31616314285bbe2b9fcfd93be90127"
+    },
+    {
+      "path": "tasks/plug_power_socket/learner.py",
+      "source_sha256": "17aa444760fcf929cb5f52d78477a309b15b7fd02b938e039c806529bd6e0cc5"
+    },
+    {
+      "path": "tasks/plug_power_socket/modeling.py",
+      "source_sha256": "fbd6f592f3674055522784ac6890d7a0cae01e6abb9511eeb5548f1238d6136e"
+    },
+    {
+      "path": "tasks/plug_power_socket/robot.py",
+      "source_sha256": "2841111743e78271eca9ed141c498c2adee50f8758c17f889b18fc207d077065"
+    },
+    {
+      "path": "tasks/push_t/__init__.py",
+      "source_sha256": "a4aa79fa774d954b9b67520b3a1bd6c2397f1fed604fa24926e42f2165386055"
+    },
+    {
+      "path": "tasks/push_t/classifier.py",
+      "source_sha256": "aed142273fc7a817973abe6e5f2a1c6450cd83ca44849e58a8217fd211173e6f"
+    },
+    {
+      "path": "tasks/push_t/config.py",
+      "source_sha256": "275cb6d0a4622ba75d788713eadd8d7f534923525b90e8ddb4928a778aba591b"
+    },
+    {
+      "path": "tasks/push_t/learner.py",
+      "source_sha256": "d2a3d255b0fe2afbeb546330e0281d4b96f643f0d2617d988638db5c70a4177e"
+    },
+    {
+      "path": "tasks/push_t/modeling.py",
+      "source_sha256": "ccf52366faeeee1cbbae54f3c29a8023e154143fb3d71b82768cf047937373d2"
+    },
+    {
+      "path": "tasks/push_t/robot.py",
+      "source_sha256": "1126b422a01a19646af153e73d0bc5223b95858504a9d3546d562f41a9648480"
+    },
+    {
+      "path": "tasks/push_t/test_modeling.py",
+      "source_sha256": "6389230583a9ae6fb2c2b3d9501538845138c906425ca3d5d5fc71f1e232b80a"
+    },
+    {
+      "path": "tasks/push_t/test_robot.py",
+      "source_sha256": "2bd5cfb47b7cd932450bc044fcb8b9ee1722743424a789522ffa8d3ecf8ed97d"
+    },
+    {
+      "path": "tasks/rotate_knob/README.md",
+      "source_sha256": "0e091246ca27d67b2d851d0e624c9ca66854f7acd45732c83eef6119adaff40b"
+    },
+    {
+      "path": "tasks/rotate_knob/__init__.py",
+      "source_sha256": "2f5e340db63839ad4aa3e2b011ee38759740d6dfaec9b73d1ab732d57fd163b9"
+    },
+    {
+      "path": "tasks/rotate_knob/classifier.py",
+      "source_sha256": "0901acd578e2bc64c85b4b76340c3c2f5cb901ae5fec535a097c9c565169b013"
+    },
+    {
+      "path": "tasks/rotate_knob/config.py",
+      "source_sha256": "905870cfe4174287059421b33739bf0397729b9ffadf389f4ced0a4ce1533af8"
+    },
+    {
+      "path": "tasks/rotate_knob/learner.py",
+      "source_sha256": "c02dddf05979889f024ffdcecee8866853088dd3ce557651a1ad08b6117717aa"
+    },
+    {
+      "path": "tasks/rotate_knob/modeling.py",
+      "source_sha256": "8afdb6bc6d3b6be504fdb05752252bc2488c9d36aef9318f9427258a6638d034"
+    },
+    {
+      "path": "tasks/rotate_knob/record_classifier_demo.py",
+      "source_sha256": "902836e1b3fe1dc1d4fa1b43145781cf4abfac7a5aa6ac4e683aba5e0f30164a"
+    },
+    {
+      "path": "tasks/rotate_knob/robot.py",
+      "source_sha256": "d6ffbdd59e02d6243907fd72e344737c23559d6489bcccc0de5a2ca7cb648881"
+    },
+    {
+      "path": "tasks/rotate_knob/test_config.py",
+      "source_sha256": "90bd5bef5d2947ddf02327156c53edf5abb19c7116cd7bbeb07f56f1e401f214"
+    },
+    {
+      "path": "tasks/rotate_knob/test_runtime.py",
+      "source_sha256": "777c2af232a0dbaf82a3894a212df3212091db4b3e90ec677354c7961703ce59"
+    },
+    {
+      "path": "tasks/test_loading.py",
+      "source_sha256": "0c4546118171cd778b5d3b65a43c0ce77aa375426c8d878829712fbc706324be"
+    },
+    {
+      "path": "tools/calibrate_limit_action_threshold.py",
+      "source_sha256": "3febc98ae0a997072f545f2364a867d24e66b7cff62e24c67855601841f32f1b"
+    },
+    {
+      "path": "tools/collect_images_teleop.py",
+      "source_sha256": "7c63e2118b51c67c7a522bc2b28b9f208012d9253502e62c9c3e15d9adbc2e48"
+    },
+    {
+      "path": "tools/export_iql_actor.py",
+      "source_sha256": "5d56f886b94bd0767102eaa496d591170ca37f372a9a7a226babcc7b71cb7881"
+    },
+    {
+      "path": "tools/list_successful_episode_actors.py",
+      "source_sha256": "a7886acb182da4a8dca527bdf0ba0c1b53cbf1a7ac81b41ee2872b918d8141c1"
+    },
+    {
+      "path": "tools/plot_episode_actor_validation.py",
+      "source_sha256": "d81bff29d09d185c46f9ef976126aaf0119b9310bde241589c18e2a06e2ff483"
+    },
+    {
+      "path": "tools/plot_experiment_performance.py",
+      "source_sha256": "aa5a5ad0d2eb0838850ffbad5af084b9675444ee0daf45dbb50f65020b6dce01"
+    },
+    {
+      "path": "tools/plot_intervention_rate.py",
+      "source_sha256": "c10549f2bb6820b03f25f73653949c869c6f40ee5eddb0dd840f0a62b4e524dd"
+    },
+    {
+      "path": "tools/plot_task_tcp_ranges.py",
+      "source_sha256": "99e4e2d2788e767985ab842df50c5e125612f3493421b8db94d118395bd1ff60"
+    },
+    {
+      "path": "tools/reset_assemble.py",
+      "source_sha256": "f9f87b175b3163a75f88167a314ada48bba21c5116eef1a89f72b3aa83ba1186"
+    },
+    {
+      "path": "tools/show_global_camera.py",
+      "source_sha256": "ac0473669fa75a24e444891ca24d6572e42977e7125a1e66285301cb274cd774"
+    },
+    {
+      "path": "tools/show_robot_position.py",
+      "source_sha256": "e7da4fd60b03bf871866f32f967853f3434e405e8033d217d1d70684158c9dce"
+    },
+    {
+      "path": "tools/show_wrist_camera.py",
+      "source_sha256": "2004842887d210993462fd13cfc5c29ecd5143555f00cf1db0fecd0b1cb118b1"
+    },
+    {
+      "path": "tools/tag_images.py",
+      "source_sha256": "d69d35227989ab43b1f8e85cdcffd47277f19a97d948b3168fd30f9bda0f2ae2"
+    },
+    {
+      "path": "tools/test_collect_images_teleop.py",
+      "source_sha256": "4ee6cd361b96f29d5f19dd0a38dd353dbc904033efcbbdf0e279b31394ec3242"
+    },
+    {
+      "path": "tools/test_list_successful_episode_actors.py",
+      "source_sha256": "b322cf208b7285180030c03d03352cdc82f53c99889e9badbf874d17dc8bb6e7"
+    },
+    {
+      "path": "tools/test_show_global_camera.py",
+      "source_sha256": "03ebabd71b993d962c906dad9501bca4ef2b329bed9a38b974dd5e788a6bc3b8"
+    },
+    {
+      "path": "tools/test_show_robot_position.py",
+      "source_sha256": "07d44c9e4b3a49cf1f15706922c4271ce9ac76bd338e1643557a0f7fcb5f6eaf"
+    },
+    {
+      "path": "tools/test_train_classifier.py",
+      "source_sha256": "aaa3f0aa67833539ba4fd7910e282daaa44c6db4d80de93940ffd14734684da4"
+    },
+    {
+      "path": "tools/train_bc_offline.py",
+      "source_sha256": "00e18900cbbc894c8b679c78e26846734219551576e5d271f74794d4f67aeca6"
+    },
+    {
+      "path": "tools/train_classifier.py",
+      "source_sha256": "9c1fe42c1bb910e1d575d624588b828c85bc17ba0e41190a7fd54c5a4b21d6d0"
+    },
+    {
+      "path": "tools/view_cameras.py",
+      "source_sha256": "1a8aa0f13f29acaf4a4c320da8e3edde3738e1c2c74bfb0d83ee664f7388e1b1"
+    }
+  ],
+  "source_paper": {
+    "path": "srt-paper/main-6.pdf",
+    "sha256": "1e8742b5172cf15d0d86078e22bb08adeeb9f6420b5b57a569d1b78c7346de12"
+  }
+}
