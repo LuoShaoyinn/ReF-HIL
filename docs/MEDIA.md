@@ -21,8 +21,8 @@ inventory is not a claim that every frame of every raw recording was watched.
 Sampled openings and training/evaluation frames were inspected for all five
 `full-10s.mp4` exports. These are the existing edited full-sequence timelapses,
 with preparation excluded and training/evaluation speed labels retained. Raw
-`src/full-run.mp4` recordings are not used as task players. Three separate
-recovery edits are included per task (15 total), with their original playback
+`src/full-run.mp4` recordings are not used as task players. Four separate
+recovery edits are included per task (20 total), with their original playback
 speed preserved. Their exact filenames are listed in `tools/prepare_web_media.py`
 and the generated `.github/media.json` manifest. Sampled recovery contact sheets were inspected. The overview includes task training, autonomous
 disturbance cases, and comparison results. Its motivation slide includes

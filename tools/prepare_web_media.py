@@ -37,6 +37,11 @@ CLIPS = (
     ('cable-routing-recovery-1', 'result/hang_double_strings/disturb1.mp4', 'Cable lift', False),
     ('cable-routing-recovery-2', 'result/hang_double_strings/disturb3.mp4', 'Cable tug', False),
     ('cable-routing-recovery-3', 'result/hang_double_strings/disturb4.mp4', 'Arm disturbance', False),
+    ('push-t-recovery-4', 'result/push_t/run-4_Sub_01.mp4', 'Lighting change', False),
+    ('cap-unscrewing-recovery-4', 'result/rotate_knob/disturb2.mp4', 'Lighting change', False),
+    ('gear-assembly-recovery-4', 'result/insert-gear/disturb4.mp4', 'Recovery example 4', False),
+    ('plug-insertion-recovery-4', 'result/plug_power_socket/20260919-100126-074221_Sub_01.mp4', 'Lighting change', False),
+    ('cable-routing-recovery-4', 'result/hang_double_strings/disturb2.mp4', 'Lighting change', False),
 )
 
 
