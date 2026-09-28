@@ -17,12 +17,26 @@ from tools.inventory_media import probe
 
 CLIPS = (
     ("overview", "video-3-1080p.mp4", "Full project video", True),
-    ("training-wall", "video_clip_wall.mp4", "Training montage (includes human interaction)", False),
     ("push-t-training", "result/push_t/full-10s.mp4", "Push-T training timelapse", False),
     ("cap-unscrewing-training", "result/rotate_knob/full-10s.mp4", "Cap unscrewing training timelapse", False),
     ("gear-assembly-training", "result/insert-gear/full-10s.mp4", "Gear assembly training timelapse", False),
     ("plug-insertion-training", "result/plug_power_socket/full-10s.mp4", "Plug insertion training timelapse", False),
     ("cable-routing-training", "result/hang_double_strings/full-10s.mp4", "Dual-branch cable routing training timelapse", False),
+    ('push-t-recovery-1', 'result/push_t/run-4_Sub_02.mp4', 'Contact recovery', False),
+    ('push-t-recovery-2', 'result/push_t/run-4_Sub_03.mp4', 'Orientation adjustment', False),
+    ('push-t-recovery-3', 'result/push_t/run-4_Sub_04.mp4', 'Object relocation', False),
+    ('cap-unscrewing-recovery-1', 'result/rotate_knob/disturb1.mp4', 'Recovery example 1', False),
+    ('cap-unscrewing-recovery-2', 'result/rotate_knob/Rotate-knov_disturb3.mp4', 'Recovery example 2', False),
+    ('cap-unscrewing-recovery-3', 'result/rotate_knob/Rotate-knov_disturb4.mp4', 'Arm deflection', False),
+    ('gear-assembly-recovery-1', 'result/insert-gear/disturb1.mp4', 'Gear reorientation', False),
+    ('gear-assembly-recovery-2', 'result/insert-gear/disturb2.mp4', 'Arm disturbance', False),
+    ('gear-assembly-recovery-3', 'result/insert-gear/disturb3.mp4', 'Contact recovery', False),
+    ('plug-insertion-recovery-1', 'result/plug_power_socket/20260919-100126-074221_Sub_02.mp4', 'Recovery example 1', False),
+    ('plug-insertion-recovery-2', 'result/plug_power_socket/20260919-100126-074221_Sub_03.mp4', 'Recovery example 2', False),
+    ('plug-insertion-recovery-3', 'result/plug_power_socket/20260919-100126-074221_Sub_04.mp4', 'Recovery example 3', False),
+    ('cable-routing-recovery-1', 'result/hang_double_strings/disturb1.mp4', 'Cable lift', False),
+    ('cable-routing-recovery-2', 'result/hang_double_strings/disturb3.mp4', 'Cable tug', False),
+    ('cable-routing-recovery-3', 'result/hang_double_strings/disturb4.mp4', 'Arm disturbance', False),
 )
 
 
@@ -50,6 +64,12 @@ def main() -> None:
     posters = args.output / "assets/posters"
     videos.mkdir(parents=True, exist_ok=True)
     posters.mkdir(parents=True, exist_ok=True)
+    # The wall is a decorative background, never a featured experiment player.
+    background_source = args.source / "video_clip_wall.mp4"
+    background = posters / "training-wall.jpg"
+    run(["ffmpeg", "-nostdin", "-v", "error", "-n", "-ss", "1",
+         "-i", str(background_source), "-frames:v", "1", "-vf", "scale=960:-2",
+         "-q:v", "3", "-map_metadata", "-1", str(background)])
     rows = []
     for slug, source_name, caption, audio in CLIPS:
         source = args.source / source_name
@@ -83,7 +103,11 @@ def main() -> None:
             "sha256": digest(target), "full_decode_passed": True, **probe(target),
         })
     manifest = args.output / "assets/media.json"
-    manifest.write_text(json.dumps({"videos": rows}, indent=2) + "\n")
+    manifest.write_text(json.dumps({"videos": rows, "background": {
+        "source": "video_clip_wall.mp4", "source_sha256": digest(background_source),
+        "poster": background.relative_to(args.output).as_posix(),
+        "sha256": digest(background), "usage": "decorative hero background only",
+    }}, indent=2) + "\n")
     print(f"Prepared and decoded {len(rows)} videos -> {manifest}")
 
 
