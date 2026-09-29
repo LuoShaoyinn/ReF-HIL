@@ -21,10 +21,14 @@ body{font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--text-primary);bac
 
 /* Give the project name and paper title a more open rhythm. */
 .project-hero .hero-body{padding-top:88px;padding-bottom:48px}
-.project-hero .publication-title{letter-spacing:-.035em;line-height:1.2;margin-bottom:34px!important}
+.project-hero .publication-title{letter-spacing:.08em;line-height:1.2!important;margin-bottom:34px!important}
 .project-hero .paper-title{line-height:1.38;letter-spacing:-.02em;max-width:940px}
 .project-hero .paper-subtitle{margin-top:22px;margin-bottom:30px;line-height:1.65}
 #abstract{padding-top:48px;padding-bottom:48px}
 @media(max-width:768px){.project-hero .hero-body{padding:60px 22px 32px}.project-hero .publication-title{margin-bottom:27px!important}.project-hero .paper-title{line-height:1.4}.project-hero .paper-subtitle{margin-top:20px;margin-bottom:26px}#abstract{padding:36px 20px}}
 
-.ablation-section{margin-top:64px}.ablation-section>.title{font-size:28px;letter-spacing:-.025em;margin-bottom:16px}.ablation-section>p{max-width:800px;color:#5a6c61;font-size:14px;line-height:1.8}.ablation-section .paper-figure{margin-top:25px}
+.ablation-section{margin-top:88px;padding-top:28px;border-top:1px solid #dce5e0}.ablation-section>.title{font-size:28px;letter-spacing:-.025em;margin-bottom:16px}.ablation-section>p{max-width:800px;color:#5a6c61;font-size:14px;line-height:1.8}.ablation-section .paper-figure{margin-top:25px}
+
+/* Consistent research-section headings, overriding template spacing. */
+.section-heading .title,#abstract .title,.ablation-section>.title{letter-spacing:-.015em;line-height:1.3;font-weight:650!important;padding-bottom:0;margin-bottom:20px!important}
+@media(max-width:768px){.ablation-section{margin-top:60px;padding-top:24px}.ablation-section>.title{font-size:26px}}
