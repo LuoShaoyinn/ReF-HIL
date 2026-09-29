@@ -10,6 +10,7 @@ from urllib.parse import unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[2]
+ANONYMOUS_PAGE = "https://anonymous.4open.science/w/ReF-HIL-7762/"
 
 
 class Assets(HTMLParser):
@@ -37,7 +38,9 @@ def main():
     assets = Assets()
     assets.feed(page)
     for link in assets.links:
-        parsed = urlsplit(link)
+        # Explicit anonymous links still refer to assets in this checkout.
+        local_link = link.removeprefix(ANONYMOUS_PAGE)
+        parsed = urlsplit(local_link)
         if parsed.scheme or parsed.netloc:
             continue
         if not parsed.path:
