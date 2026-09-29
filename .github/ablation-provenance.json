@@ -1,0 +1,8 @@
+{
+  "source": "assets/paper/ref-hil.pdf",
+  "source_sha256": "1e8742b5172cf15d0d86078e22bb08adeeb9f6420b5b57a569d1b78c7346de12",
+  "figure": 5,
+  "page": 6,
+  "method": "Vector bar heights and vertical error-bar extents extracted from PDF-to-SVG geometry, calibrated against 0 and 100 percent ticks; rounded to 0.1 percentage points. Zero-height bars use the plotted zero markers. Values are digitized approximations, not original experiment data.",
+  "cross_checks": "ReF-HIL success matches Table I; normalized lengths match Table I within rounding. Cable w/o value shaping matches text: 46.7% success and 74.7% normalized length."
+}

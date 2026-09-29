@@ -1,0 +1,41 @@
+task,method,metric,mean,sample_sd,provenance
+Push-T,ReF-HIL,autonomous_success_percent,100.0,0.0,Digitized from manuscript Figure 5 vector geometry; approximate
+Push-T,w/o value shaping,autonomous_success_percent,88.3,2.9,Digitized from manuscript Figure 5 vector geometry; approximate
+Push-T,w/o action fence,autonomous_success_percent,91.7,2.9,Digitized from manuscript Figure 5 vector geometry; approximate
+Push-T,w/o both,autonomous_success_percent,43.3,7.6,Digitized from manuscript Figure 5 vector geometry; approximate
+Cap unscrewing,ReF-HIL,autonomous_success_percent,100.0,0.0,Digitized from manuscript Figure 5 vector geometry; approximate
+Cap unscrewing,w/o value shaping,autonomous_success_percent,65.0,5.0,Digitized from manuscript Figure 5 vector geometry; approximate
+Cap unscrewing,w/o action fence,autonomous_success_percent,96.7,2.9,Digitized from manuscript Figure 5 vector geometry; approximate
+Cap unscrewing,w/o both,autonomous_success_percent,0.0,0.0,Digitized from manuscript Figure 5 vector geometry; approximate
+Gear assembly,ReF-HIL,autonomous_success_percent,95.0,5.0,Digitized from manuscript Figure 5 vector geometry; approximate
+Gear assembly,w/o value shaping,autonomous_success_percent,73.3,2.9,Digitized from manuscript Figure 5 vector geometry; approximate
+Gear assembly,w/o action fence,autonomous_success_percent,100.0,0.0,Digitized from manuscript Figure 5 vector geometry; approximate
+Gear assembly,w/o both,autonomous_success_percent,55.0,0.0,Digitized from manuscript Figure 5 vector geometry; approximate
+Plug insertion,ReF-HIL,autonomous_success_percent,91.7,2.9,Digitized from manuscript Figure 5 vector geometry; approximate
+Plug insertion,w/o value shaping,autonomous_success_percent,46.7,2.9,Digitized from manuscript Figure 5 vector geometry; approximate
+Plug insertion,w/o action fence,autonomous_success_percent,81.7,2.9,Digitized from manuscript Figure 5 vector geometry; approximate
+Plug insertion,w/o both,autonomous_success_percent,5.0,0.0,Digitized from manuscript Figure 5 vector geometry; approximate
+Dual-branch cable routing,ReF-HIL,autonomous_success_percent,95.0,5.0,Digitized from manuscript Figure 5 vector geometry; approximate
+Dual-branch cable routing,w/o value shaping,autonomous_success_percent,46.7,2.9,Digitized from manuscript Figure 5 vector geometry; approximate
+Dual-branch cable routing,w/o action fence,autonomous_success_percent,76.7,2.9,Digitized from manuscript Figure 5 vector geometry; approximate
+Dual-branch cable routing,w/o both,autonomous_success_percent,0.0,0.0,Digitized from manuscript Figure 5 vector geometry; approximate
+Push-T,ReF-HIL,normalized_episode_length_percent,46.2,1.9,Digitized from manuscript Figure 5 vector geometry; approximate
+Push-T,w/o value shaping,normalized_episode_length_percent,41.4,2.2,Digitized from manuscript Figure 5 vector geometry; approximate
+Push-T,w/o action fence,normalized_episode_length_percent,40.1,2.1,Digitized from manuscript Figure 5 vector geometry; approximate
+Push-T,w/o both,normalized_episode_length_percent,73.3,4.8,Digitized from manuscript Figure 5 vector geometry; approximate
+Cap unscrewing,ReF-HIL,normalized_episode_length_percent,21.2,0.7,Digitized from manuscript Figure 5 vector geometry; approximate
+Cap unscrewing,w/o value shaping,normalized_episode_length_percent,54.4,1.7,Digitized from manuscript Figure 5 vector geometry; approximate
+Cap unscrewing,w/o action fence,normalized_episode_length_percent,27.0,2.7,Digitized from manuscript Figure 5 vector geometry; approximate
+Cap unscrewing,w/o both,normalized_episode_length_percent,100.0,0.0,Digitized from manuscript Figure 5 vector geometry; approximate
+Gear assembly,ReF-HIL,normalized_episode_length_percent,26.7,3.7,Digitized from manuscript Figure 5 vector geometry; approximate
+Gear assembly,w/o value shaping,normalized_episode_length_percent,47.0,1.9,Digitized from manuscript Figure 5 vector geometry; approximate
+Gear assembly,w/o action fence,normalized_episode_length_percent,13.5,0.3,Digitized from manuscript Figure 5 vector geometry; approximate
+Gear assembly,w/o both,normalized_episode_length_percent,54.9,0.5,Digitized from manuscript Figure 5 vector geometry; approximate
+Plug insertion,ReF-HIL,normalized_episode_length_percent,32.2,2.5,Digitized from manuscript Figure 5 vector geometry; approximate
+Plug insertion,w/o value shaping,normalized_episode_length_percent,66.2,0.9,Digitized from manuscript Figure 5 vector geometry; approximate
+Plug insertion,w/o action fence,normalized_episode_length_percent,36.7,2.3,Digitized from manuscript Figure 5 vector geometry; approximate
+Plug insertion,w/o both,normalized_episode_length_percent,95.6,0.0,Digitized from manuscript Figure 5 vector geometry; approximate
+Dual-branch cable routing,ReF-HIL,normalized_episode_length_percent,39.1,3.5,Digitized from manuscript Figure 5 vector geometry; approximate
+Dual-branch cable routing,w/o value shaping,normalized_episode_length_percent,74.7,4.5,Digitized from manuscript Figure 5 vector geometry; approximate
+Dual-branch cable routing,w/o action fence,normalized_episode_length_percent,52.9,2.2,Digitized from manuscript Figure 5 vector geometry; approximate
+Dual-branch cable routing,w/o both,normalized_episode_length_percent,100.0,0.0,Digitized from manuscript Figure 5 vector geometry; approximate

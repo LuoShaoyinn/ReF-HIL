@@ -141,7 +141,7 @@
     },
     {
       "id": "push-t-recovery-1",
-      "caption": "Contact recovery",
+      "caption": "T Relocate",
       "source": "result/push_t/run-4_Sub_02.mp4",
       "source_sha256": "283061e7b6edba9fc7d4b614f90ed16d9e57cdc2d47f8088de4f7885fa165be5",
       "video": "assets/videos/push-t-recovery-1.mp4",
@@ -163,7 +163,7 @@
     },
     {
       "id": "push-t-recovery-2",
-      "caption": "Orientation adjustment",
+      "caption": "Contact Rich Recovery",
       "source": "result/push_t/run-4_Sub_03.mp4",
       "source_sha256": "829cd3337438991b33ee85fe2ca4759a2c95fe3107934d444edd4cbea3f8585e",
       "video": "assets/videos/push-t-recovery-2.mp4",
@@ -185,7 +185,7 @@
     },
     {
       "id": "push-t-recovery-3",
-      "caption": "Object relocation",
+      "caption": "Orientation Adjust",
       "source": "result/push_t/run-4_Sub_04.mp4",
       "source_sha256": "d779a2d01e9d3d45be46d712a7bf90268abd97e5b70998b787ad975ade2122d6",
       "video": "assets/videos/push-t-recovery-3.mp4",
@@ -207,7 +207,7 @@
     },
     {
       "id": "cap-unscrewing-recovery-1",
-      "caption": "Recovery example 1",
+      "caption": "Human Push",
       "source": "result/rotate_knob/disturb1.mp4",
       "source_sha256": "8f8aa34bfb6f8a2daccfc4d056810bf2c0ac1d48df8b625e61356ae350e050cd",
       "video": "assets/videos/cap-unscrewing-recovery-1.mp4",
@@ -229,7 +229,7 @@
     },
     {
       "id": "cap-unscrewing-recovery-2",
-      "caption": "Recovery example 2",
+      "caption": "Miss Recovery",
       "source": "result/rotate_knob/Rotate-knov_disturb3.mp4",
       "source_sha256": "192915fc779766d3c4a7f76b6260eefa23e0f4da7b34a3e9fe48efe22f22465b",
       "video": "assets/videos/cap-unscrewing-recovery-2.mp4",
@@ -251,7 +251,7 @@
     },
     {
       "id": "cap-unscrewing-recovery-3",
-      "caption": "Arm deflection",
+      "caption": "Arm Deflection",
       "source": "result/rotate_knob/Rotate-knov_disturb4.mp4",
       "source_sha256": "0dc9a44fa4fb28f4d0b292bcd2136218278b1f510cc86d7f7978480d3b13b93c",
       "video": "assets/videos/cap-unscrewing-recovery-3.mp4",
@@ -273,7 +273,7 @@
     },
     {
       "id": "gear-assembly-recovery-1",
-      "caption": "Gear reorientation",
+      "caption": "Rotation Stuck",
       "source": "result/insert-gear/disturb1.mp4",
       "source_sha256": "0f175ccf5e2b747d87556b88e071b4f246bdd406fb7d63645d04786bf4b793c3",
       "video": "assets/videos/gear-assembly-recovery-1.mp4",
@@ -295,7 +295,7 @@
     },
     {
       "id": "gear-assembly-recovery-2",
-      "caption": "Arm disturbance",
+      "caption": "Human Push",
       "source": "result/insert-gear/disturb2.mp4",
       "source_sha256": "d0dbe6ff007d9dc210a9e1c1446f38ae99f5eefc279a4b79d48b57135b726745",
       "video": "assets/videos/gear-assembly-recovery-2.mp4",
@@ -317,7 +317,7 @@
     },
     {
       "id": "gear-assembly-recovery-3",
-      "caption": "Contact recovery",
+      "caption": "Lighting Shift",
       "source": "result/insert-gear/disturb3.mp4",
       "source_sha256": "a3b263194c40f457a33bab78932b413e2f6b654d77e745f9c67b1b78829f788f",
       "video": "assets/videos/gear-assembly-recovery-3.mp4",
@@ -339,7 +339,7 @@
     },
     {
       "id": "plug-insertion-recovery-1",
-      "caption": "Recovery example 1",
+      "caption": "Plug Displacement",
       "source": "result/plug_power_socket/20260919-100126-074221_Sub_02.mp4",
       "source_sha256": "38cf7cd093edf7bfe9af55e75977ec1a3563e261b1d758965f43169f167bd34a",
       "video": "assets/videos/plug-insertion-recovery-1.mp4",
@@ -361,7 +361,7 @@
     },
     {
       "id": "plug-insertion-recovery-2",
-      "caption": "Recovery example 2",
+      "caption": "Misalignment Recovery",
       "source": "result/plug_power_socket/20260919-100126-074221_Sub_03.mp4",
       "source_sha256": "27002532e54551206ff70bbd9c349952e80ee105df0f29b0a6ea59c3771b1090",
       "video": "assets/videos/plug-insertion-recovery-2.mp4",
@@ -383,7 +383,7 @@
     },
     {
       "id": "plug-insertion-recovery-3",
-      "caption": "Recovery example 3",
+      "caption": "Plug Relocation",
       "source": "result/plug_power_socket/20260919-100126-074221_Sub_04.mp4",
       "source_sha256": "a78de3e7fed80f737c4a93c849ff745604230ddd43cb19c2368c3a7dc2a1f595",
       "video": "assets/videos/plug-insertion-recovery-3.mp4",
@@ -405,7 +405,7 @@
     },
     {
       "id": "cable-routing-recovery-1",
-      "caption": "Cable lift",
+      "caption": "Cable Lift",
       "source": "result/hang_double_strings/disturb1.mp4",
       "source_sha256": "2e3e01bad318b6b10a0a2c0f22b7169d0344019e282eff7c74e204073f8a28a0",
       "video": "assets/videos/cable-routing-recovery-1.mp4",
@@ -427,7 +427,7 @@
     },
     {
       "id": "cable-routing-recovery-2",
-      "caption": "Cable tug",
+      "caption": "Cable Tug",
       "source": "result/hang_double_strings/disturb3.mp4",
       "source_sha256": "d0fe69326ae7a310ffda403be9ae95c342c43d3d927aa5fa51cba481a2581a1c",
       "video": "assets/videos/cable-routing-recovery-2.mp4",
@@ -449,7 +449,7 @@
     },
     {
       "id": "cable-routing-recovery-3",
-      "caption": "Arm disturbance",
+      "caption": "Human Push",
       "source": "result/hang_double_strings/disturb4.mp4",
       "source_sha256": "56d9b23cc50d0c226f4fe590c0e93f3cd7a7ef9e3aab17a74ae56aaa8a0e9a58",
       "video": "assets/videos/cable-routing-recovery-3.mp4",
@@ -471,7 +471,7 @@
     },
     {
       "id": "push-t-recovery-4",
-      "caption": "Lighting change",
+      "caption": "Lighting Shift",
       "source": "result/push_t/run-4_Sub_01.mp4",
       "source_sha256": "b562fde20815245d828e13fd3831a0010daa490d2dbc8dbe25c049e8936a936e",
       "video": "assets/videos/push-t-recovery-4.mp4",
@@ -493,7 +493,7 @@
     },
     {
       "id": "cap-unscrewing-recovery-4",
-      "caption": "Lighting change",
+      "caption": "Lighting Shift",
       "source": "result/rotate_knob/disturb2.mp4",
       "source_sha256": "4f469e741ba9b97c9dacef9f281bb7bbcff6d2bb789b003722e176f1fcfb02f6",
       "video": "assets/videos/cap-unscrewing-recovery-4.mp4",
@@ -515,7 +515,7 @@
     },
     {
       "id": "gear-assembly-recovery-4",
-      "caption": "Recovery example 4",
+      "caption": "Reorientation",
       "source": "result/insert-gear/disturb4.mp4",
       "source_sha256": "8dbe487d315a39d0b7c1ab586e8f39f20cd3bcc2dc7934b5c3c838c9a26390af",
       "video": "assets/videos/gear-assembly-recovery-4.mp4",
@@ -537,7 +537,7 @@
     },
     {
       "id": "plug-insertion-recovery-4",
-      "caption": "Lighting change",
+      "caption": "Lighting Shift",
       "source": "result/plug_power_socket/20260919-100126-074221_Sub_01.mp4",
       "source_sha256": "9373dd0cb8623852c947b405ca817f183a59cd6e1b10e9c3429fbfb989f9853e",
       "video": "assets/videos/plug-insertion-recovery-4.mp4",
@@ -559,7 +559,7 @@
     },
     {
       "id": "cable-routing-recovery-4",
-      "caption": "Lighting change",
+      "caption": "Lighting Shift",
       "source": "result/hang_double_strings/disturb2.mp4",
       "source_sha256": "7ec86eb04a4b435e154343347c7ca3f3da76408b922a1e3a6e011b2552b702ed",
       "video": "assets/videos/cable-routing-recovery-4.mp4",
