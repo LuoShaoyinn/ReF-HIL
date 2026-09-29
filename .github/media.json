@@ -7,9 +7,9 @@
       "source_sha256": "2c7e6f037dffd59a218861fa0b1081c44a3bab963dabd117206e5b47b9369959",
       "video": "assets/videos/overview.mp4",
       "poster": "assets/posters/overview.jpg",
-      "sha256": "cbe920878273f5a624d68efdb29944b33e96edecf08c8b6c8bf7f970df597d39",
+      "sha256": "01d0232774447b4b2018b8c8e6eb2c6ce1fd3c8db95d3a4eefed48a36fba76be",
       "full_decode_passed": true,
-      "bytes": 30755605,
+      "bytes": 30533635,
       "duration_seconds": 177.833333,
       "streams": [
         {
@@ -19,13 +19,6 @@
           "height": 1080,
           "pix_fmt": "yuv420p",
           "avg_frame_rate": "30/1"
-        },
-        {
-          "codec_type": "audio",
-          "codec_name": "aac",
-          "avg_frame_rate": "0/0",
-          "sample_rate": "44100",
-          "channels": 2
         }
       ]
     },
