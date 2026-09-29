@@ -44,7 +44,7 @@ python -m tools.inventory_media ../srt-video-clip --output docs/media-inventory.
 python -m tools.prepare_web_media ../srt-video-clip --output ../ReF-HIL-webpages
 ```
 
-The preparation tool produces a 1080p AV1/AAC overview from the master,
+The preparation tool produces a silent 1080p AV1 overview from the master,
 960px-wide muted AV1 training and recovery clips, JPEG posters, and a manifest containing
 source/output SHA-256 hashes. It strips container metadata, enables MP4
 fast-start, and fully decodes every generated video. Existing output videos

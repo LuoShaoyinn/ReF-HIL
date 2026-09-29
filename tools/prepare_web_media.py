@@ -76,7 +76,7 @@ def main() -> None:
          "-i", str(background_source), "-frames:v", "1", "-vf", "scale=960:-2",
          "-q:v", "3", "-map_metadata", "-1", str(background)])
     rows = []
-    for slug, source_name, caption, audio in CLIPS:
+    for slug, source_name, caption, full_resolution in CLIPS:
         source = args.source / source_name
         target = videos / f"{slug}.mp4"
         poster = posters / f"{slug}.jpg"
@@ -86,20 +86,18 @@ def main() -> None:
         command = [
             "ffmpeg", "-nostdin", "-v", "error", "-n", "-i", str(source),
             "-map", "0:v:0", "-map_metadata", "-1", "-map_chapters", "-1",
-            "-vf", "scale=1920:-2" if audio else "scale=960:-2",
+            "-vf", "scale=1920:-2" if full_resolution else "scale=960:-2",
             "-c:v", "libsvtav1", "-preset", "8", "-crf", "32",
             "-svtav1-params", f"lp={args.threads}", "-tag:v", "av01",
             "-pix_fmt", "yuv420p", "-threads", str(args.threads),
         ]
-        if audio:
-            command += ["-map", "0:a?", "-c:a", "aac", "-b:a", "128k"]
-        else:
-            command += ["-an"]
+        # Website videos are silent, including the full project overview.
+        command += ["-an"]
         command += ["-movflags", "+faststart", str(target)]
         run(command)
         run(["ffmpeg", "-nostdin", "-v", "error", "-n", "-ss", "1", "-i", str(target),
              "-frames:v", "1", "-vf", "scale=960:-2", "-q:v", "3", "-map_metadata", "-1", str(poster)])
-        # Decode every frame, including audio in the full project video.
+        # Decode every video frame.
         run(["ffmpeg", "-nostdin", "-v", "error", "-xerror", "-i", str(target), "-f", "null", "-"])
         rows.append({
             "id": slug, "caption": caption,
